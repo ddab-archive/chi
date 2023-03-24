@@ -1,0 +1,61 @@
+// Help.map
+//
+// Maps help topic identifiers to constants.
+//
+// $Rev: 48 $
+// $Date: 2010-04-09 20:24:50 +0100 (Fri, 09 Apr 2010) $
+//
+// ***** BEGIN LICENSE BLOCK *****
+//
+// Version: MPL 1.1
+//
+// The contents of this file are subject to the Mozilla Public License Version
+// 1.1 (the "License"); you may not use this file except in compliance with
+// the License. You may obtain a copy of the License at
+// http://www.mozilla.org/MPL/
+//
+// Software distributed under the License is distributed on an "AS IS" basis,
+// WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+// for the specific language governing rights and limitations under the
+// License.
+//
+// The Original Code is Help.map.
+//
+// The Initial Developer of the Original Code is Peter Johnson
+// (http://www.delphidabbler.com/).
+//
+// Portions created by the Initial Developer are Copyright (C) 2001-2010 Peter
+// Johnson. All Rights Reserved.
+//
+// Contributor(s):
+//   NONE
+//
+// ***** END LICENSE BLOCK *****
+
+
+// Main topics (externally accessible)
+IDH_HOWITWORKS              =   1;
+IDH_COPYRIGHT               =   2;
+IDH_PRIVACY                 =   4;
+
+// Dialog box topics (externally accessible)
+IDH_DLG_CHOOSEHELP          =  11;
+IDH_DLG_CHOOSEDESTFOLDER    =  12;
+
+// Pop-up "What's this help
+// common controls
+IDH_POPUP_TABS              = 100;
+IDH_POPUP_VERSIONCOMBO      = 101;
+IDH_POPUP_CLOSEBTN          = 102;
+IDH_POPUP_HELPBTN           = 103;
+// install page controls
+IDH_POPUP_HELPFILEEDIT      = 201;
+IDH_POPUP_HELPFILEDESTEDIT  = 202;
+IDH_POPUP_DESCEDIT          = 203;
+IDH_POPUP_INSTALLBTN        = 299;
+// remove page controls
+IDH_POPUP_HELPFILECOMBO     = 301;
+IDH_POPUP_UNREGCHK          = 302;
+IDH_POPUP_DELETEFILECHK     = 303;
+IDH_POPUP_REMOVEBTN         = 399;
+

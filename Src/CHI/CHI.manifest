@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!--
+ * CHI.manifest
+ *
+ * Manifest file specifying execution level required for Vista and later.
+ *
+ * Based on a sample manifest in "Windows Vista User Account Control (UAC) and
+ * Delphi" by Fredrik Haglund, CodeGear and content of Delphi 7's WindowsXP.res.
+ *
+ * $Rev: 24 $
+ * $Date: 2010-04-06 20:28:57 +0100 (Tue, 06 Apr 2010) $
+ *
+ * This file may be copied freely.
+-->
+
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity
+    type="win32"
+    name="DelphiDabbler.CHI"
+    version="1.0.0.0"
+    processorArchitecture="*"
+  />
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges>
+        <requestedExecutionLevel level="requireAdministrator" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>
+

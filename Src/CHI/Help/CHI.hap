@@ -1,0 +1,1170 @@
+<*HelpAuthor HTA1.9*>
+K
+32
+[Footnotes]
+$=Using CHI - Overview
+#=OVERVIEW
+K=Overview
+@=Using CHI CNT topic: An overview of all versions of CHI.
+[End]
+6
+NS
+1
+BD
+2
+2
+0
+BU
+3
+
+1
+JumpID(IDH_COPYRIGHT)
+BU
+4
+
+1
+JumpId(USINGGUI)
+BU
+6
+
+1
+JumpID(USINGCMDLINE)
+BU
+7
+
+1
+JumpID(AUTHOR)
+2000
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss Arial;}{\f1\fswiss \fcharset0 Arial;}}{\colortbl\red0\green0\blue0;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue255;}\pard \plain \plain\f0\fs20\cf1 \protect <NS 1>\plain\f0\fs8\cf2 
+\par \plain\f0\fs24\cf3\b Overview\plain\f0\fs20\cf2 
+\par \plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </NS 1>\plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 
+\par \pard \plain\f0\fs18\cf2 Component Help Installer (CHI) enables OpenHelp enabled component help files to be intergrated with and removed from Borland Delphi. It can be used with Delphi versions 3 to \plain\f1\fs18\cf2 7\plain\f0\fs18\cf2 .
+\par \plain\f0\fs8\cf2 
+\par \plain\f1\fs18\cf2 The are two different versions\plain\f0\fs18\cf2 :
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li800 \tx800 \plain\f0\fs18\cf1 \protect <BU 4>\plain\f0\fs18\cf2 \tab \plain\f1\fs18\cf2 A\plain\f0\fs18\cf2  stand-alone windows application\plain\f1\fs18\cf2  -\plain\f0\fs18\cf2  CHI.exe
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf1 \protect <BU 6>\plain\f0\fs18\cf2 \tab \plain\f1\fs18\cf2 A \plain\f0\fs18\cf2 command-line application - CHInst.exe
+\par \pard \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 Click the relevant button to see help \plain\f1\fs18\cf2 about \plain\f0\fs18\cf2 these different ways of running CHI.
+\par \plain\f0\fs8\cf2 
+\par \plain\f1\fs18\cf2\b Note: Both versions of the program require admin privileges so must be run as admin. The programs both request elevation on Windows Vista and later.\plain\f0\fs8\cf2 
+\par 
+\par \plain\f0\fs20\cf1 \protect <BD 2>\plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </BD 2>\plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2\i See also:\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs20\cf1 \protect <BU 3>\plain\f0\fs18\cf2 \tab Copyright and licensing information
+\par \plain\f0\fs18\cf1 \protect <BU 7>\plain\f0\fs18\cf2 \tab About the author
+\par }
+
+[Footnotes]
+$=Using CHI - GUI Application
+#=USINGGUI
+K=GUI application
+@=Using CHI CNT topic: Describes how to use the GUI version of CHI. Describes controls common to both pages and links to separare topics concerned with installation and removal.
+[End]
+8
+NS
+1
+BD
+2
+2
+0
+BU
+3
+
+1
+JumpID(USINGCMDLINE)
+BU
+4
+
+1
+JumpID(GUIINSTALL)
+BU
+5
+
+1
+JumpID(GUIUNINSTALL)
+BU
+6
+
+1
+JumpID(GUIGETTINGHELP)
+BU
+7
+
+1
+JumpID(VISITWEBSITE)
+BU
+9
+
+1
+JumpID(DISPLAYABOUT)
+1955
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss Arial;}{\f1\fswiss \fcharset0 Arial;}}{\colortbl\red0\green0\blue0;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue255;}\pard \plain \plain\f0\fs20\cf1 \protect <NS 1>\plain\f0\fs8\cf2 
+\par \plain\f0\fs24\cf3\b Using the GUI Application\plain\f0\fs20\cf2 
+\par \plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </NS 1>\plain\f0\fs8\cf2 
+\par 
+\par \plain\f0\fs18\cf2 This topic covers the use of the stand-alone Windows application.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 The main part of the CHI user interface is a tabbed control. The first tab is used to install help files and the second is used to removed them. From the interface you can also get help\plain\f1\fs18\cf2  and visit \plain\f0\fs18\cf2 the \plain\f1\fs18\cf2 DelphiDabbler\plain\f0\fs18\cf2  website.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 Click the following buttons to get more information about:
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li800 \tx800 \plain\f0\fs18\cf1 \protect <BU 4>\plain\f0\fs18\cf2 \tab Installing help files
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf1 \protect <BU 5>\plain\f0\fs18\cf2 \tab Removing help files
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf1 \protect <BU 6>\plain\f0\fs18\cf2 \tab Getting help on using CHI
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf1 \protect <BU 7>\plain\f0\fs18\cf2 \tab Visting the \plain\f1\fs18\cf2 DelphiDabbler\plain\f0\fs18\cf2  website
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf1 \protect <BU 9>\plain\f0\fs18\cf2 \tab Displaying the About box
+\par \pard \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs20\cf1 \protect <BD 2>\plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </BD 2>\plain\f0\fs18\cf2 
+\par \plain\f0\fs18\cf2\i See also:
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf1 \protect <BU 3>\plain\f0\fs18\cf2 \tab Using the command line application
+\par }
+
+[Footnotes]
+$=Installing Help Files Using the GUI
+#=GUIINSTALL
+K=Installing help files;GUI application;GUI application,installing help files
+@=Sub-topic: Describes how to use the Windows application to install help files.
+[End]
+5
+NS
+1
+BD
+2
+2
+0
+BU
+3
+
+1
+JumpID(GUIUNINSTALL)
+HS
+4
+0
+
+0
+FILEPATHMACROS
+
+HS
+5
+0
+
+0
+FILEPATHMACROS
+
+2448
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss Arial;}}{\colortbl\red0\green0\blue0;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue255;}\pard \plain \plain\f0\fs20\cf1 \protect <NS 1>\plain\f0\fs8\cf2 
+\par \plain\f0\fs24\cf3\b Installing Help Files Using GUI Application\plain\f0\fs20\cf2 
+\par \plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </NS 1>\plain\f0\fs8\cf2 
+\par 
+\par \plain\f0\fs18\cf2 To install a help file into the Delphi IDE do the following:
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs18\cf2 1)\tab Select the Install tab. 
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 2)\tab Enter the name of the Help file to be installed in the \plain\f0\fs18\cf2\i Help file\plain\f0\fs18\cf2  edit box. (You can include a \plain\f0\fs18\cf1 \protect <HS 4>\plain\f0\fs18\cf2 file path macro\plain\f0\fs18\cf1 \protect </HS 4>\plain\f0\fs18\cf2  in the file path). Alternatively click the adjacent browse button to choose the file from a dialog box). 
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 3)\tab If you wish to copy the help file to a different location before installing then enter the path the file is to be copied to in the \plain\f0\fs18\cf2\i Copy to\plain\f0\fs18\cf2  edit box. (You can include a \plain\f0\fs18\cf1 \protect <HS 5>\plain\f0\fs18\cf2 file path macro\plain\f0\fs18\cf1 \protect </HS 5>\plain\f0\fs18\cf2  in the file path). Alternatively click the adjacent \plain\f0\fs18\cf2\i Browse\plain\f0\fs18\cf2  button and choose the folder from a dialog box).
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 4)\tab Enter a description of the help file in the \plain\f0\fs18\cf2\i Description\plain\f0\fs18\cf2  edit box - this is displayed when Delphi offers a choice of topics.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 5)\tab Choose the version you are installing into from the \plain\f0\fs18\cf2\i Delphi\plain\f0\fs18\cf2  combo box.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 6)\tab Click the \plain\f0\fs18\cf2\i Install\plain\f0\fs18\cf2  button.
+\par \pard \plain\f0\fs8\cf2 
+\par \plain\f0\fs20\cf1 \protect <BD 2>\plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </BD 2>\plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2\i See also:\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs20\cf1 \protect <BU 3>\plain\f0\fs18\cf2 \tab Uninstalling help files using GUI application
+\par }
+
+[Footnotes]
+$=Uninstalling Help Files using the GUI
+#=GUIUNINSTALL
+K=Uninstalling help files;GUI application;GUI application,uninstalling help files
+@=Sub-topic: Describes how to use the Windows application to uninstall help files.
+[End]
+3
+NS
+1
+BD
+2
+2
+0
+BU
+3
+
+1
+JumpID(GUIINSTALL)
+2024
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss Arial;}}{\colortbl\red0\green0\blue0;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue255;}\pard \plain \plain\f0\fs20\cf1 \protect <NS 1>\plain\f0\fs8\cf2 
+\par \plain\f0\fs24\cf3\b Uninstalling Help Files Using GUI Application\plain\f0\fs20\cf2 
+\par \plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </NS 1>\plain\f0\fs8\cf2 
+\par 
+\par \plain\f0\fs18\cf2 To uninstall a help file from the Delphi IDE do the following:
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs18\cf2 1)\tab Select the Remove tab.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 2)\tab Choose the help file from the drop-down list (CHI can only remove help files installed using the program and they are all listed here).
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 3)\tab If you wish Windows to forget about the help file's location check the \plain\f0\fs18\cf2\i Remove file reference from registry\plain\f0\fs18\cf2  check box. You may not wish to do this if the help file is used by some other application.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 4)\tab If you want CHI to delete the help file check the \plain\f0\fs18\cf2\i Delete the help file\plain\f0\fs18\cf2  check box. You can only do this if the file reference is also to be removed from the registry.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 5)\tab Choose the version you are uninstalling from using the \plain\f0\fs18\cf2\i Delphi\plain\f0\fs18\cf2  combo box.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 6)\tab Click the \plain\f0\fs18\cf2\i Remove\plain\f0\fs18\cf2  button.
+\par \pard \plain\f0\fs8\cf2 
+\par \plain\f0\fs20\cf1 \protect <BD 2>\plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </BD 2>\plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2\i See also:\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs20\cf1 \protect <BU 3>\plain\f0\fs18\cf2 \tab Installing help files using GUI application
+\par }
+
+[Footnotes]
+$=Getting Help From The GUI
+#=GUIGETTINGHELP
+K=Getting help;GUI application;GUI application,displaying help
+@=Sub-topic: Describes how to use the Windows application to get help.
+[End]
+4
+NS
+1
+BD
+2
+2
+0
+HS
+5
+0
+
+0
+VISITWEBSITE
+
+HS
+7
+0
+
+0
+IDH_HOWITWORKS
+
+2063
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss Arial;}{\f1\fnil \fcharset2 WingDings;}{\f2\fswiss \fcharset0 Arial;}}{\colortbl\red0\green0\blue0;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue255;}\pard \plain \plain\f0\fs20\cf1 \protect <NS 1>\plain\f0\fs8\cf2 
+\par \plain\f0\fs24\cf3\b Getting Help Using GUI Application\plain\f0\fs20\cf2 
+\par \plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </NS 1>\plain\f0\fs8\cf2 
+\par 
+\par \plain\f0\fs18\cf2 The following help is availabled by clicking the \plain\f0\fs18\cf2\i Help\plain\f0\fs18\cf2  button on the main window and selecting an item from the drop down menu:
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f1\fs18\cf2 \'A7\plain\f0\fs18\cf2 \tab Display the help contents and index dialog by clicking \plain\f0\fs18\cf2\i Contents\plain\f0\fs18\cf2 .
+\par \plain\f1\fs18\cf2 \'A7\plain\f0\fs18\cf2 \tab Learn \plain\f0\fs18\cf1 \protect <HS 7>\plain\f0\fs18\cf2 how CHI works\plain\f0\fs18\cf1 \protect </HS 7>\plain\f0\fs18\cf2  by selecting the \plain\f0\fs18\cf2\i How CHI Works\plain\f0\fs18\cf2  menu item.
+\par \pard \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 From the help menu you can also\plain\f2\fs18\cf2  \plain\f0\fs18\cf2 visit the \plain\f0\fs18\cf1 \protect <HS 5>\plain\f2\fs18\cf2 DelphiDabbler\plain\f0\fs18\cf2  website\plain\f0\fs18\cf1 \protect </HS 5>\plain\f0\fs18\cf2  and display the About box. 
+\par \plain\f0\fs8\cf2 
+\par \plain\f2\fs18\cf2 On some versions of Windows a\plain\f0\fs18\cf2  \plain\f0\fs18\cf2\b ?\plain\f0\fs18\cf2  symbol appears in the title bar of the main window and some dialog boxes. Clicking this symbol and then clicking an item on the display pops up some brief help on that item.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 Additionally, you can get help from dialog boxes by clicking their help button.
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs20\cf1 \protect <BD 2>\plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </BD 2>\plain\f0\fs8\cf2 
+\par }
+
+[Footnotes]
+$=Visting The DelphiDabbler Website
+#=VISITWEBSITE
+K=DelphiDabbler website;Website
+@=Sub-topic: Describes how to use the Windows application to visit the DelphiDabbler Website.
+[End]
+2
+NS
+1
+BD
+2
+2
+0
+1284
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss Arial;}{\f1\fswiss \fcharset0 Arial;}{\f2\fnil \fcharset0 Courier New;}}{\colortbl\red0\green0\blue0;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue255;}\pard \plain \plain\f0\fs20\cf1 \protect <NS 1>\plain\f0\fs8\cf2 
+\par \plain\f0\fs24\cf3\b Visting The \plain\f1\fs24\cf3\i\b delphi\plain\f2\fs36\cf3\b Dabbler\plain\f0\fs24\cf3\b  Website\plain\f0\fs20\cf2 
+\par \plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </NS 1>\plain\f0\fs8\cf2 
+\par 
+\par \plain\f0\fs18\cf2 The \plain\f1\fs18\cf2 DelphiDabbler\plain\f0\fs18\cf2  website is the \plain\f1\fs18\cf2 home of CHI and \plain\f0\fs18\cf2 other \plain\f1\fs18\cf2 open source DelphiDabbler\plain\f0\fs18\cf2  \plain\f1\fs18\cf2 projects\plain\f0\fs18\cf2  \plain\f1\fs18\cf2 and much more\plain\f0\fs18\cf2 .
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 To visit the site click the \plain\f0\fs18\cf2\i Help\plain\f0\fs18\cf2  button on the main window and select the \plain\f0\fs18\cf2\i Visit \plain\f1\fs18\cf2\i DelphiDabbler\plain\f0\fs18\cf2\i  Website\plain\f0\fs18\cf2  option.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs20\cf1 \protect <BD 2>\plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </BD 2>\plain\f0\fs18\cf2\i 
+\par }
+
+[Footnotes]
+$=Displaying The About Box
+#=DISPLAYABOUT
+K=About box;GUI application;GUI application,about box
+@=Sub-topic: Describes how to use the Windows application to view the about box.
+[End]
+3
+NS
+1
+BD
+2
+2
+0
+BU
+3
+
+1
+JumpID(IDH_COPYRIGHT)
+1093
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss Arial;}}{\colortbl\red0\green0\blue0;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue255;}\pard \plain \plain\f0\fs20\cf1 \protect <NS 1>\plain\f0\fs8\cf2 
+\par \plain\f0\fs24\cf3\b Displaying The About Box\plain\f0\fs20\cf2 
+\par \plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </NS 1>\plain\f0\fs8\cf2 
+\par 
+\par \plain\f0\fs18\cf2 Click the \plain\f0\fs18\cf2\i Help\plain\f0\fs18\cf2  button and select the \plain\f0\fs18\cf2\i About\plain\f0\fs18\cf2  menu item to display the program's about box. Here you will be able to access the program's copyright and licensing information and be able to determine the version of the program you are using.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs20\cf1 \protect <BD 2>\plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </BD 2>\plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2\i See also:\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs20\cf1 \protect <BU 3>\plain\f0\fs18\cf2 \tab Copyright and licensing information
+\par }
+
+[Footnotes]
+$=Using CHI - Command Line Application
+#=USINGCMDLINE
+K=Command line application;Command line application,overview
+@=Using CHI CNT topic: Describes how to use the command line application.
+[End]
+8
+NS
+1
+BD
+2
+2
+0
+BU
+3
+
+1
+JumpID(USINGGUI)
+HS
+4
+0
+
+0
+CMDLINEUNINSTALL
+
+HS
+5
+0
+
+0
+CMDLINEINSTALL
+
+HS
+6
+0
+
+0
+FILEPATHMACROS
+
+HS
+7
+0
+
+0
+CMDLINEHELP
+
+BU
+8
+
+1
+JumpID(EXAMPLECMDLINE)
+3322
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss Arial;}{\f1\fswiss \fcharset0 Arial;}}{\colortbl\red0\green0\blue0;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue255;}\pard \plain \plain\f0\fs20\cf1 \protect <NS 1>\plain\f0\fs8\cf2 
+\par \plain\f0\fs24\cf3\b Using the Command Line Application\plain\f0\fs20\cf2 
+\par \plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </NS 1>\plain\f0\fs8\cf2 
+\par 
+\par \plain\f0\fs18\cf2 A command line tool, \plain\f0\fs18\cf2\i CHInst\plain\f0\fs18\cf2 , comes bundled with \plain\f0\fs18\cf2\i Component Help Installer\plain\f0\fs18\cf2 . It integrates or de-integrate\plain\f1\fs18\cf2 s\plain\f0\fs18\cf2  \plain\f0\fs18\cf2\i OpenHelp\plain\f0\fs18\cf2  compatible help files with \plain\f0\fs18\cf2\i Delphi\plain\f0\fs18\cf2  v3\plain\f1\fs18\cf2  to v7\plain\f0\fs18\cf2 . The purpose of this tool is to enable component help files to be installed in \plain\f0\fs18\cf2\i Delphi\plain\f0\fs18\cf2  from batch files, installers etc.
+\par \plain\f0\fs12\cf2 
+\par \plain\f0\fs18\cf2\b Modes of operation\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2\i CHInst\plain\f0\fs18\cf2  has three modes of operation:
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs18\cf2 1)\tab \plain\f0\fs18\cf1 \protect <HS 5>\plain\f0\fs18\cf2 installing help files\plain\f0\fs18\cf1 \protect </HS 5>\plain\f0\fs18\cf2  into the \plain\f0\fs18\cf2\i Delphi\plain\f0\fs18\cf2  IDE.
+\par 2)\tab \plain\f0\fs18\cf1 \protect <HS 4>\plain\f0\fs18\cf2 uninstalling help files\plain\f0\fs18\cf1 \protect </HS 4>\plain\f0\fs18\cf2  registered by the GUI application\plain\f1\fs18\cf2  \plain\f0\fs18\cf2 or \plain\f0\fs18\cf2\i CHInst\plain\f0\fs18\cf2 .
+\par 3)\tab \plain\f0\fs18\cf1 \protect <HS 7>\plain\f0\fs18\cf2 displaying help information\plain\f0\fs18\cf1 \protect </HS 7>\plain\f0\fs18\cf2  on the console.
+\par \plain\f0\fs8\cf2 
+\par \pard \plain\f0\fs18\cf2 To simplify installation and uninstallation on different versions of \plain\f0\fs18\cf2\i Delphi\plain\f0\fs18\cf2 , \plain\f0\fs18\cf2\i CHInst\plain\f0\fs18\cf2  supports the use of \plain\f0\fs18\cf1 \protect <HS 6>\plain\f0\fs18\cf2 file path macros\plain\f0\fs18\cf1 \protect </HS 6>\plain\f0\fs18\cf2 .
+\par \plain\f0\fs12\cf2 
+\par \plain\f0\fs18\cf2\b Return codes\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 If \plain\f0\fs18\cf2\i CHInst\plain\f0\fs18\cf2  successfully completes an installation / uninstallation then the program returns 0 to the operating system or calling program. If an error is encountered a positive number is returned.
+\par \plain\f0\fs12\cf2 
+\par \plain\f1\fs18\cf2\b Example\plain\f1\fs18\cf2 
+\par \plain\f1\fs8\cf2 
+\par \plain\f1\fs18\cf2 Click the button below to see an example of using the command line application.\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs20\cf1 \protect <BD 2>\plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </BD 2>\plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2\i See also:\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs20\cf1 \protect <BU 3>\plain\f0\fs18\cf2 \tab Using the Windows application
+\par \plain\f1\fs18\cf1 \protect <BU 8>\plain\f1\fs18\cf2 \tab Example\plain\f0\fs18\cf2 
+\par }
+
+[Footnotes]
+$=Installing Help Files Using The Command Line
+#=CMDLINEINSTALL
+K=Installing help files;Command line application;Command line application,installing help files
+@=Sub-topic: Describes how to use the command line application to install help files.
+[End]
+8
+NS
+1
+BU
+2
+
+1
+JumpID(CMDLINEUNINSTALL)
+BD
+3
+2
+0
+KP
+4
+HS
+5
+0
+
+0
+FILEPATHMACROS
+
+KP
+6
+KP
+7
+BU
+8
+
+1
+JumpID(EXAMPLECMDLINE)
+5344
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss Arial;}{\f1\fswiss \fcharset0 Arial;}{\f2\fnil \fcharset0 Courier New;}}{\colortbl\red0\green0\blue0;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue255;}\pard \plain \plain\f0\fs20\cf1 \protect <NS 1>\plain\f0\fs8\cf2 
+\par \plain\f0\fs24\cf3\b Installing Help Files Using The Command Line\plain\f0\fs20\cf2 
+\par \plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </NS 1>\plain\f0\fs8\cf2 
+\par 
+\par \plain\f0\fs18\cf2 This topic describes how to install help files using the \plain\f0\fs18\cf2\i CHInst \plain\f0\fs18\cf2 command line tool.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2\i CHInst\plain\f0\fs18\cf2  can:
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs18\cf2 a)\tab copy help files to the required installation folder
+\par b)\tab register the help file with Windows
+\par c)\tab record a description of the file that appears in help find dialogs
+\par d)\tab work with any version of Delphi from v3 onwards
+\par \pard \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 The command to issue to install a help file \plain\f1\fs18\cf2 (all on one line) \plain\f0\fs18\cf2 is:
+\par \plain\f0\fs8\cf2 
+\par \pard \li400 \plain\f2\fs18\cf1 \protect <KP 4>\plain\f2\fs18\cf2 CHInst [-i] \plain\f2\fs18\cf2\i source_help_file\plain\f2\fs18\cf1\i \protect </KP 4>\plain\f2\fs18\cf2 
+\par \pard \li800 \plain\f2\fs18\cf1 \protect <KP 6>\plain\f2\fs18\cf2 [-c \plain\f2\fs18\cf2\i dest_help_file\plain\f2\fs18\cf2 ]\plain\f2\fs18\cf1 \protect </KP 6>\plain\f0\fs18\cf2 
+\par \plain\f2\fs18\cf1 \protect <KP 7>\plain\f2\fs18\cf2 [-d \plain\f2\fs18\cf2\i description\plain\f2\fs18\cf2 ] [-v\plain\f2\fs18\cf2\i X\plain\f2\fs18\cf2 ] [-q]\plain\f2\fs18\cf1 \protect </KP 7>\plain\f0\fs18\cf2 
+\par \pard \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 The switches and parameters are described below.
+\par \plain\f0\fs12\cf2 
+\par \plain\f0\fs18\cf2\b the -i switch\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 This switch is optional. It tells \plain\f0\fs18\cf2\i CHInst\plain\f0\fs18\cf2  to perform an installation rather than an uninstallation. Leaving the switch out has the same effect as including it. 
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 If provided the -i switch must be the first item on the command line. \plain\f0\fs18\cf2\i source_help_file\plain\f0\fs18\cf2  specifies the name of the help file to be installed. This parameter is compulsory and must follow the -i switch where provided, or be the first parameter if the -i switch is omitted.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 The \plain\f0\fs18\cf2\i source_help_file\plain\f0\fs18\cf2  path can include a \plain\f0\fs18\cf1 \protect <HS 5>\plain\f0\fs18\cf2 file path macro\plain\f0\fs18\cf1 \protect </HS 5>\plain\f0\fs18\cf2 .
+\par \plain\f0\fs12\cf2 
+\par \plain\f0\fs18\cf2\b the -c switch
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 If the -c switch is used then \plain\f0\fs18\cf2\i source_help_file\plain\f0\fs18\cf2  is copied to \plain\f0\fs18\cf2\i dest_help_file\plain\f0\fs18\cf2  and \plain\f0\fs18\cf2\i dest_help_file\plain\f0\fs18\cf2  is registered with the Delphi IDE. If the -c switch is not used then the help file given by \plain\f0\fs18\cf2\i source_help_file\plain\f0\fs18\cf2  is registered with Delphi and integrated into the IDE.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 The \plain\f0\fs18\cf2\i dest_help_file\plain\f0\fs18\cf2  path can include a file path macro.
+\par \plain\f0\fs12\cf2 
+\par \plain\f0\fs18\cf2\b the -d switch\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 This switch registers the following parameter as a \plain\f0\fs18\cf2\i description\plain\f0\fs18\cf2  of the help file with the Delphi IDE. The \plain\f0\fs18\cf2\i description\plain\f0\fs18\cf2  appears in topic list dialogs. (The \plain\f0\fs18\cf2\i description\plain\f0\fs18\cf2  parameter must be enclosed in "" quotes if it contains spaces).
+\par \plain\f0\fs12\cf2 
+\par \plain\f0\fs18\cf2\b the -v switch\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 This switch tells \plain\f0\fs18\cf2\i CHInst\plain\f0\fs18\cf2  which version of Delphi the help file is to be registered with. Replace \plain\f0\fs18\cf2\i X\plain\f0\fs18\cf2  with the version of Delphi required - from 2 to \plain\f1\fs18\cf2 7\plain\f0\fs18\cf2 , e.g. -v5 for Delphi 5. If this switch is not provided then Delphi 4 is assumed.
+\par \plain\f0\fs12\cf2 
+\par \plain\f0\fs18\cf2\b the -q switch\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 This switch makes the program operate without generating any screen output. This is useful when calling \plain\f0\fs18\cf2\i CHInst\plain\f0\fs18\cf2  from batch files or installers where no screen output is required.
+\par \plain\f0\fs8\cf2 
+\par \plain\f1\fs18\cf1 \protect <BD 3>\plain\f1\fs8\cf2  \plain\f1\fs18\cf1 \protect </BD 3>\plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2\i See also:\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs18\cf1 \protect <BU 2>\plain\f0\fs18\cf2 \tab Uninstall help files using the command line
+\par \plain\f1\fs18\cf1 \protect <BU 8>\plain\f1\fs18\cf2 \tab Command line application example\plain\f0\fs18\cf2 
+\par }
+
+[Footnotes]
+$=Uninstall Help Files Using The Command Line
+#=CMDLINEUNINSTALL
+K=Uninstalling help files;Command line application;Command line application,uninstalling help files
+@=Sub-topic: Describes how to use the command line application to uninstall help files.
+[End]
+6
+NS
+1
+BD
+2
+2
+0
+BU
+3
+
+1
+JumpID(CMDLINEINSTALL)
+KP
+4
+HS
+5
+0
+
+0
+FILEPATHMACROS
+
+BU
+6
+
+1
+JumpID(EXAMPLECMDLINE)
+4065
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss Arial;}{\f1\fnil \fcharset0 Courier New;}{\f2\fswiss \fcharset0 Arial;}}{\colortbl\red0\green0\blue0;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue255;}\pard \plain \plain\f0\fs20\cf1 \protect <NS 1>\plain\f0\fs8\cf2 
+\par \plain\f0\fs24\cf3\b Uninstall Help Files Using The Command Line\plain\f0\fs20\cf2 
+\par \plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </NS 1>\plain\f0\fs8\cf2 
+\par 
+\par \plain\f0\fs18\cf2 This topic describes how to uninstall help files using the \plain\f0\fs18\cf2\i CHInst\plain\f0\fs18\cf2  command line tool.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2\i CHInst\plain\f0\fs18\cf2  can uninstall (de-integrate) help files from \plain\f0\fs18\cf2\i Delphi\plain\f0\fs18\cf2 . It can optionally delete the help file and / or unregister it with Windows. The program can only be used to uninstall help files that were installed using version 2 or later of the GUI application or command line tool.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 The command to issue unistall a previusly installed help file is:
+\par \plain\f0\fs8\cf2 
+\par \pard \li400 \plain\f0\fs18\cf1 \protect <KP 4>\plain\f1\fs18\cf2 CHInst -u \plain\f1\fs18\cf2\i help_file\plain\f1\fs18\cf2  [-r] [-x] [-v\plain\f1\fs18\cf2\i X\plain\f1\fs18\cf2 ]\plain\f0\fs18\cf1 \protect </KP 4>\plain\f0\fs18\cf2 
+\par \pard \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 The switches and parameters are described below.
+\par \plain\f0\fs12\cf2 
+\par \plain\f0\fs18\cf2\b the -u switch\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 This switch is required for uninstallation. The following \plain\f0\fs18\cf2\i help_file\plain\f0\fs18\cf2  name specifies the path and file name of the file being uninstalled. The -u switch must be the first item on the command line.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 The \plain\f0\fs18\cf2\i help_file\plain\f0\fs18\cf2  name can include a \plain\f0\fs18\cf1 \protect <HS 5>\plain\f0\fs18\cf2 file path macro\plain\f0\fs18\cf1 \protect </HS 5>\plain\f0\fs18\cf2 .
+\par \plain\f0\fs12\cf2 
+\par \plain\f0\fs18\cf2\b the -r switch\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 Use this switch if the help file is to be unregistered with Windows (i.e. its entry is deleted from the registry).
+\par \plain\f0\fs12\cf2 
+\par \plain\f0\fs18\cf2\b the -x switch\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 This switch causes the help file to be physically deleted. Use with care.
+\par \plain\f0\fs12\cf2 
+\par \plain\f0\fs18\cf2\b the -v switch\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 This switch tells \plain\f0\fs18\cf2\i CHInst\plain\f0\fs18\cf2  which version of \plain\f0\fs18\cf2\i Delphi\plain\f0\fs18\cf2  the help file is to be uninstalled from. Replace \plain\f0\fs18\cf2\i X\plain\f0\fs18\cf2  with the version of \plain\f0\fs18\cf2\i Delphi\plain\f0\fs18\cf2  required - from 2 to \plain\f2\fs18\cf2 7\plain\f0\fs18\cf2 , e.g. -v5 for \plain\f0\fs18\cf2\i Delphi 5\plain\f0\fs18\cf2 . If this switch is not provided then \plain\f0\fs18\cf2\i Delphi 4\plain\f0\fs18\cf2  is assumed.
+\par \plain\f0\fs12\cf2 
+\par \plain\f0\fs18\cf2\b the -q switch\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 This switch makes the program operate without generating any screen output. This is useful when calling \plain\f0\fs18\cf2\i CHInst\plain\f0\fs18\cf2  from batch files or (un)installers where no screen output is required.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs20\cf1 \protect <BD 2>\plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </BD 2>\plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2\i See also:\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs20\cf1 \protect <BU 3>\plain\f0\fs18\cf2 \tab Install help files using the command line
+\par \plain\f2\fs18\cf1 \protect <BU 6>\plain\f2\fs18\cf2 \tab Command line application example\plain\f0\fs18\cf2 
+\par }
+
+[Footnotes]
+$=Getting Help For The Command Line Tool
+#=CMDLINEHELP
+K=Getting help;Command line application;Command line application,displaying help
+@=Sub-topic: Describes how to use the command line application to display brief help information on the console.
+[End]
+3
+NS
+1
+BD
+2
+2
+0
+HS
+3
+0
+
+0
+USINGCMDLINE
+
+1522
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss Arial;}{\f1\fswiss \fcharset0 Arial;}{\f2\fnil \fcharset0 Courier New;}{\f3\fnil \fcharset0 Arial;}}{\colortbl\red0\green0\blue0;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue255;}\pard \plain \plain\f0\fs20\cf1 \protect <NS 1>\plain\f0\fs8\cf2 
+\par \plain\f0\fs24\cf3\b Getting Help For The Command Line Tool\plain\f0\fs20\cf2 
+\par \plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </NS 1>\plain\f0\fs8\cf2 
+\par 
+\par \plain\f0\fs18\cf2\i CHInst\plain\f0\fs18\cf2  can be requested to display help about using the program\plain\f1\fs18\cf2 . There are two types of help available by issuing the following commands.\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-1400 \li1800 \tx1800 \plain\f2\fs18\cf2 CHInst -h\plain\f3\fs18\cf2 \tab displays the CHI Windows help file at the "\plain\f3\fs18\cf1 \protect <HS 3>\plain\f3\fs18\cf2 Using the Command Line Application\plain\f3\fs18\cf1 \protect </HS 3>\plain\f3\fs18\cf2 " topic.
+\par \pard \plain\f0\fs18\cf2\i or\plain\f0\fs18\cf2  
+\par \pard \fi-1400 \li1800 \tx1800 \plain\f2\fs18\cf2 CHInst -?\plain\f3\fs18\cf2 \tab displays a brief description of the command line parameters on the console.
+\par \pard \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 No other parameters should be provided.
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs20\cf1 \protect <BD 2>\plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </BD 2>\plain\f0\fs18\cf2 
+\par }
+
+[Footnotes]
+$=Command Line Application Example
+#=EXAMPLECMDLINE
+K=Command line application;Command line application,example
+@=Using CHI CNT topic: Example of using the command line application.
+[End]
+6
+NS
+1
+BD
+2
+2
+0
+BU
+3
+
+1
+JumpID(CMDLINEINSTALL)
+BU
+4
+
+1
+JumpID(CMDLINEUNINSTALL)
+KP
+5
+HS
+6
+0
+
+0
+FILEPATHMACROS
+
+5556
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss Arial;}{\f1\fswiss \fcharset0 Arial;}{\f2\fnil \fcharset0 Courier New;}{\f3\fnil \fcharset2 WingDings;}}{\colortbl\red0\green0\blue0;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue255;}\pard \plain \plain\f0\fs20\cf1 \protect <NS 1>\plain\f0\fs8\cf2 
+\par \plain\f0\fs24\cf3\b Command Line Application\plain\f1\fs24\cf3\b  Example\plain\f0\fs20\cf2 
+\par \plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </NS 1>\plain\f0\fs8\cf2 
+\par 
+\par \plain\f1\fs18\cf2 In this example we'll create a batch file to install the DelphiDabbler Version Information component's help file into a selected version of Delphi. (A copy of the component is available from the \plain\f1\fs18\cf3 DelphiDabbler website\plain\f1\fs18\cf2 ).
+\par \plain\f1\fs8\cf2 
+\par \plain\f1\fs18\cf2 We will pass the required version as a parameter to the batch file, along with a switch indicating whether to install or uninstall. We will also flag up any errors. The batch file assumes that the \plain\f1\fs18\cf2\i TPJVersionInfo\plain\f1\fs18\cf2  help file - \plain\f2\fs18\cf2 PJVersionInfo.hlp\plain\f1\fs18\cf2  has been copied to the system's TEMP folder which we find by accessing the %TEMP% environment variable from the batch file.
+\par \plain\f1\fs8\cf2 
+\par \plain\f1\fs18\cf2 Here's the batch file (the line numbers are for reference only and are not part of the file. Note that some lines below have had to be folded over to display all the required information - they should be entered all on one line. The batch file needs to be executed from the same folder as the CHInst program.
+\par \plain\f1\fs8\cf2 
+\par \plain\f2\fs18\cf1 \protect <KP 5>\plain\f2\fs18\cf2 01  @echo off
+\par \plain\f2\fs18\cf3 02  \plain\f2\fs18\cf2 if "%1" == "" goto err1
+\par \plain\f2\fs18\cf3 03  \plain\f2\fs18\cf2 if "%2" == "" goto err2
+\par \plain\f2\fs18\cf3 04  \plain\f2\fs18\cf2 if "%1" == "install" goto install
+\par \plain\f2\fs18\cf3 05  \plain\f2\fs18\cf2 if "%1" == "uninstall" goto uninstall
+\par \plain\f2\fs18\cf3 06  \plain\f2\fs18\cf2 goto err1
+\par \plain\f2\fs18\cf3 07  \plain\f2\fs18\cf2 :install
+\par \plain\f2\fs18\cf3 08  \plain\f2\fs18\cf2 chinst -i "%TEMP%\\PJVersionInfo.hlp" -q -c 
+\par     $(HELP)\\PJVI.hlp 
+\par     -d "Delphi Dabbler Version Info Component" -v%2 
+\par \plain\f2\fs18\cf3 09  \plain\f2\fs18\cf2 if ERRORLEVEL 1 goto errinst
+\par \plain\f2\fs18\cf3 10  \plain\f2\fs18\cf2 echo File installed to Delphi %2
+\par \plain\f2\fs18\cf3 11  \plain\f2\fs18\cf2 goto end
+\par \plain\f2\fs18\cf3 12  \plain\f2\fs18\cf2 :uninstall
+\par \plain\f2\fs18\cf3 13  \plain\f2\fs18\cf2 chinst -u $(HELP)\\PJVI.hlp -q -r -x -v%2
+\par \plain\f2\fs18\cf3 14  \plain\f2\fs18\cf2 if ERRORLEVEL 1 goto errinst
+\par \plain\f2\fs18\cf3 15  \plain\f2\fs18\cf2 echo File uninstalled from Delphi %2
+\par \plain\f2\fs18\cf3 16  \plain\f2\fs18\cf2 goto end
+\par \plain\f2\fs18\cf3 17  \plain\f2\fs18\cf2 :errinst
+\par \plain\f2\fs18\cf3 18  \plain\f2\fs18\cf2 echo CHINST return error %ERRORLEVEL%
+\par \plain\f2\fs18\cf3 19  \plain\f2\fs18\cf2 goto end
+\par \plain\f2\fs18\cf3 20  \plain\f2\fs18\cf2 :err1
+\par \plain\f2\fs18\cf3 21  \plain\f2\fs18\cf2 echo First parameter must be "install" or "uninstall"
+\par \plain\f2\fs18\cf3 22  \plain\f2\fs18\cf2 goto end
+\par \plain\f2\fs18\cf3 23  \plain\f2\fs18\cf2 :err2
+\par \plain\f2\fs18\cf3 24  \plain\f2\fs18\cf2 echo 2nd parameter (Delphi version) required
+\par \plain\f2\fs18\cf3 25  \plain\f2\fs18\cf2 :end\plain\f2\fs18\cf1 \protect </KP 5>\plain\f2\fs18\cf2 
+\par \plain\f1\fs8\cf2 
+\par \plain\f1\fs18\cf2 The batch file works as follows:
+\par \plain\f1\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f3\fs18\cf2 \'A7\plain\f1\fs18\cf2 \tab Lines 01 to 07 simply check the parameters are OK. 
+\par \plain\f1\fs8\cf2 
+\par \plain\f3\fs18\cf2 \'A7\plain\f1\fs18\cf2 \tab In lines 08 to 11 we attempt to install the help file and trap any error results (CHI returns > 0 on error) or report OK and end. Note we use a \plain\f1\fs18\cf1 \protect <HS 6>\plain\f1\fs18\cf2 path macro\plain\f1\fs18\cf1 \protect </HS 6>\plain\f1\fs18\cf2  to install into the required \plain\f2\fs18\cf2 Help\plain\f1\fs18\cf2  folder. We also use the %TEMP% environment variable to find the location of the temporary folder that contains the help file.
+\par \plain\f1\fs8\cf2 
+\par \plain\f3\fs18\cf2 \'A7\plain\f1\fs18\cf2 \tab Lines 12 to 16 are where the uninstallation is performed and either success or error are reported. Note that we are both removing the help file's registry entry (-r) and deleting the file copy (-x) - so be careful not to use this script where a help file is installed in >1 version of Delphi. 
+\par \plain\f1\fs8\cf2 
+\par \plain\f3\fs18\cf2 \'A7\plain\f1\fs18\cf2 \tab Lines 17 to 19 are used to report any error codes returned from the program, while lines 20 to 24 report any problems with parameters.
+\par \pard \plain\f0\fs8\cf2  \plain\f1\fs8\cf2 .\plain\f0\fs8\cf2 
+\par \plain\f0\fs20\cf1 \protect <BD 2>\plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </BD 2>\plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2\i See also:\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs20\cf1 \protect <BU 3>\plain\f0\fs18\cf2 \tab \plain\f1\fs18\cf2 Installing help files using the command line application
+\par \plain\f1\fs18\cf1 \protect <BU 4>\plain\f1\fs18\cf2 \tab Uninstalling help files using the command line application\plain\f0\fs18\cf2 
+\par }
+
+[Footnotes]
+$=How It Works - Algorithms
+#=IDH_HOWITWORKS
+K=How it works;How it works,installation method
+@=How It Works CNT topic: describes method used to integrate help files into Delphi. This topic is also accessible from the programs Help button menu.
+[End]
+5
+NS
+1
+BD
+2
+2
+0
+BU
+3
+
+1
+JumpID(PROGSANDLIBS)
+BD
+5
+2
+0
+BD
+6
+3
+0
+9515
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss Arial;}{\f1\fswiss \fcharset0 Arial;}{\f2\fnil \fcharset0 Courier New;}{\f3\fmodern Courier New;}{\f4\fnil \fcharset2 WingDings;}{\f5\fmodern \fcharset0 Courier New;}{\f6\fnil Courier New;}{\f7\fnil \fcharset0 Arial;}}{\colortbl\red0\green0\blue0;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue255;}\pard \plain \plain\f0\fs20\cf1 \protect <NS 1>\plain\f0\fs8\cf2 
+\par \plain\f0\fs24\cf3\b How CHI Works\plain\f0\fs20\cf2 
+\par \plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </NS 1>\plain\f0\fs8\cf2 
+\par 
+\par \plain\f0\fs18\cf2\b Overview\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2\i CHI\plain\f0\fs18\cf2  works quite simply by \plain\f1\fs18\cf2 updating \plain\f1\fs18\cf2\i Delphi\plain\f1\fs18\cf2  help \plain\f0\fs18\cf2 configuration file\plain\f1\fs18\cf2 s\plain\f0\fs18\cf2  \plain\f1\fs18\cf2 with \plain\f0\fs18\cf2 statements required to integrate the help file with the \plain\f0\fs18\cf2\i Delphi OpenHelp\plain\f0\fs18\cf2  system. \plain\f0\fs18\cf2\i Delphi's\plain\f0\fs18\cf2  help contents file is then modified \plain\f1\fs18\cf2 as necessary \plain\f0\fs18\cf2 to refer to the configuration file\plain\f1\fs18\cf2 s\plain\f0\fs18\cf2 . \plain\f1\fs18\cf2\i CHI\plain\f1\fs18\cf2  also maintains a small configuration file to record which help files it has installed. \plain\f0\fs18\cf2 The  registry is also updated to register the help file and its path with Windows.
+\par \plain\f0\fs8\cf2 
+\par \plain\f1\fs18\cf2\b Please note\plain\f1\fs18\cf2  that, in order to ensure that \plain\f1\fs18\cf2\i Delphi\plain\f1\fs18\cf2  takes note of the changes made when installing and uninstalling, \plain\f1\fs18\cf2\i CHI\plain\f1\fs18\cf2  deletes any existing \plain\f2\fs18\cf2 .gid\plain\f1\fs18\cf2  and \plain\f2\fs18\cf2 .ftg\plain\f1\fs18\cf2  files in the \plain\f1\fs18\cf2\i Delphi\plain\f1\fs18\cf2  \plain\f2\fs18\cf2 Help\plain\f1\fs18\cf2  folder. Since \plain\f2\fs18\cf2 .ftg\plain\f1\fs18\cf2  files store any word indexes used by the \plain\f1\fs18\cf2\i Find\plain\f1\fs18\cf2  tab in \plain\f1\fs18\cf2\i WinHelp\plain\f1\fs18\cf2 , these indexes will need to be rebuilt after installing component help files.\plain\f0\fs18\cf2 
+\par 
+\par \plain\f0\fs18\cf2\b Installation Details\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \plain\f1\fs18\cf2\i CHI\plain\f1\fs18\cf2  updates the following \plain\f1\fs18\cf2\i Delphi\plain\f1\fs18\cf2  files, stored in the \plain\f2\fs18\cf2 Help\plain\f1\fs18\cf2  sub folder of the \plain\f1\fs18\cf2\i Delphi\plain\f1\fs18\cf2  installation. (where \plain\f1\fs18\cf2\i X\plain\f1\fs18\cf2  is the \plain\f1\fs18\cf2\i Delphi\plain\f1\fs18\cf2  version number):
+\par \plain\f1\fs8\cf2 
+\par \pard \tx2000 \tx3600 \plain\f1\fs18\cf1 \protect <BD 6>\plain\f1\fs18\cf2 \tab \plain\f1\fs18\cf2\i Delphi 3..6\tab Delphi 7\plain\f1\fs18\cf1\i \protect </BD 6>\plain\f1\fs18\cf2 
+\par \plain\f1\fs8\cf2  \plain\f1\fs18\cf2 Help contents file\tab \plain\f2\fs18\cf2 delphi\plain\f2\fs18\cf2\i X\plain\f2\fs18\cf2 .cnt\tab d7.cnt
+\par \plain\f1\fs18\cf2 OpenHelp link file\tab \plain\f2\fs18\cf2 delphi\plain\f2\fs18\cf2\i X\plain\f2\fs18\cf2 .ohi\tab d7.ohi
+\par \plain\f1\fs18\cf2 OpenHelp index file\tab \plain\f2\fs18\cf2 delphi\plain\f2\fs18\cf2\i X\plain\f2\fs18\cf2 .ohl\tab d7.ohl
+\par \plain\f1\fs18\cf2 CHI Config file\tab \plain\f2\fs18\cf2 CHId\plain\f2\fs18\cf2\i X\plain\f2\fs18\cf2 .cfg\tab CHId7.cfg
+\par \pard \plain\f1\fs18\cf1 \protect <BD 5>\plain\f1\fs8\cf2  \plain\f1\fs18\cf1 \protect </BD 5>\plain\f0\fs8\cf2 
+\par \plain\f1\fs18\cf2 For Delphi 6 and 7 \plain\f1\fs18\cf2\i CHI\plain\f1\fs18\cf2  also updates the compiler's \plain\f2\fs18\cf2 .als\plain\f1\fs18\cf2  file. In Delphi 6 this is \plain\f2\fs18\cf2 delphi6.als\plain\f1\fs18\cf2  and in Delphi 7 it is \plain\f2\fs18\cf2 d7.als\plain\f1\fs18\cf2 . This is only done if there an .als file in the same folder as the help file and it has the same name.
+\par \plain\f0\fs8\cf2 
+\par \plain\f1\fs18\cf2 The files are update as follows, asumming \plain\f0\fs18\cf2 we are installing a file named \plain\f3\fs18\cf2 MyHelpFile.hlp\plain\f0\fs18\cf2  into \plain\f3\fs18\cf2 C:\\MyHelpFolder\plain\f1\fs18\cf2  with a \plain\f0\fs18\cf2 description \plain\f1\fs18\cf2 of \plain\f0\fs18\cf2 "My Description"\plain\f1\fs18\cf2 :
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f4\fs18\cf2 \'A7\plain\f0\fs18\cf2 \tab \plain\f1\fs18\cf2 If it doesn't already exist the \plain\f1\fs18\cf2\i CHI\plain\f1\fs18\cf2  config file is created. \plain\f0\fs18\cf2\i Users should never edit this file manually.\plain\f0\fs18\cf2 
+\par \pard \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f4\fs18\cf2 \'A7\plain\f0\fs18\cf2 \tab The following entr\plain\f1\fs18\cf2 y is\plain\f0\fs18\cf2  added to \plain\f1\fs18\cf2 the \plain\f1\fs18\cf2\i CHI\plain\f1\fs18\cf2  config file:\plain\f0\fs18\cf2 
+\par \pard \fi-400 \li1200 \tx400 \plain\f3\fs18\cf2 :\plain\f5\fs18\cf2 Installed\plain\f3\fs18\cf2  MyHelpFile.hlp
+\par \pard \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f4\fs18\cf2 \'A7\plain\f0\fs18\cf2 \tab \plain\f1\fs18\cf2 The Help contents file is updated to reference the \plain\f1\fs18\cf2\i OpenHelp\plain\f1\fs18\cf2  link and index files by ensuring the file contains the following lines:\plain\f0\fs18\cf2 
+\par \pard \fi-400 \li1200 \tx400 \plain\f6\fs18\cf2 :Include delphi4.ohi
+\par :Include delphi4.ohl\plain\f0\fs8\cf2 
+\par \pard 
+\par \pard \fi-400 \li400 \tx400 \plain\f4\fs18\cf2 \'A7\plain\f0\fs18\cf2 \tab \plain\f1\fs18\cf2 The following line is added to the \plain\f1\fs18\cf2\i OpenHelp\plain\f1\fs18\cf2  link file:
+\par \pard \fi-400 \li1200 \tx400 \plain\f6\fs18\cf2 :\plain\f2\fs18\cf2 Link\plain\f6\fs18\cf2  \plain\f2\fs18\cf2 MyHelpFile\plain\f6\fs18\cf2 .\plain\f2\fs18\cf2 hlp\plain\f6\fs18\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f1\fs8\cf2 
+\par \plain\f4\fs18\cf2 \'A7\plain\f0\fs18\cf2 \tab \plain\f1\fs18\cf2 The following line is added to the \plain\f1\fs18\cf2\i OpenHelp\plain\f1\fs18\cf2  index file:
+\par \pard \fi-400 \li1200 \tx400 \plain\f6\fs18\cf2 :\plain\f2\fs18\cf2 Index My Description=MyHelpFile.hlp\plain\f6\fs18\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs8\cf2 
+\par \plain\f4\fs18\cf2 \'A7\plain\f0\fs18\cf2 \tab A string value named \plain\f3\fs18\cf2 MyHelpFile.hlp\plain\f0\fs18\cf2  with value \plain\f3\fs18\cf2 C:\\MyHelpFolder \plain\f0\fs18\cf2 is added to the \plain\f3\fs18\cf2 HK\plain\f5\fs18\cf2 LM\plain\f3\fs18\cf2 \\Software\\Microsoft\\Windows\\Help\plain\f0\fs18\cf2  registry key:
+\par \plain\f0\fs8\cf2 
+\par \plain\f4\fs18\cf2 \'A7\plain\f7\fs18\cf2 \tab In Delphi 6 and 7 \plain\f2\fs18\cf2 .als\plain\f7\fs18\cf2  files are merged into to the main \plain\f2\fs18\cf2 .als\plain\f7\fs18\cf2  file.\plain\f0\fs18\cf2 
+\par \pard 
+\par \plain\f0\fs18\cf2\b Uninstallation Details\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2\i CHI\plain\f0\fs18\cf2  should only be used to uninstall files that is has installed\plain\f1\fs18\cf2  - i.e the files that are listed in the \plain\f1\fs18\cf2\i CHI\plain\f1\fs18\cf2  config file\plain\f0\fs18\cf2 . The\plain\f1\fs18\cf2 se\plain\f0\fs18\cf2  files \plain\f1\fs18\cf2 are \plain\f0\fs18\cf2 displayed on the Remove page of the Windows application. When a help file is uninstalled \plain\f1\fs18\cf2 the following actions take place:
+\par \plain\f1\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f4\fs18\cf2 \'A7\plain\f1\fs18\cf2 \tab The relevant \plain\f2\fs18\cf2 :Index\plain\f1\fs18\cf2  entry is removed from the \plain\f1\fs18\cf2\i OpenHelp\plain\f1\fs18\cf2  index file
+\par \plain\f4\fs18\cf2 \'A7\plain\f1\fs18\cf2 \tab The relevant \plain\f2\fs18\cf2 :Link\plain\f1\fs18\cf2  entry is removed from the \plain\f1\fs18\cf2\i OpenHelp\plain\f1\fs18\cf2  link file
+\par \plain\f4\fs18\cf2 \'A7\plain\f1\fs18\cf2 \tab The file's \plain\f2\fs18\cf2 :Installed\plain\f1\fs18\cf2  entry is removed from the \plain\f1\fs18\cf2\i CHI\plain\f1\fs18\cf2  config file. The config file is not deleted when empty.
+\par \plain\f4\fs18\cf2 \'A7\plain\f1\fs18\cf2 \tab If the \plain\f0\fs18\cf2 user has specified that the file should be un-registered with Windows then the \plain\f1\fs18\cf2 registry entry under \plain\f3\fs18\cf2 H\plain\f5\fs18\cf2 KLM\plain\f3\fs18\cf2 \\Software\\Microsoft\\Windows\\Help\plain\f0\fs18\cf2  is also deleted.
+\par \pard \tx400 \plain\f1\fs8\cf2 
+\par \plain\f1\fs18\cf2 Note that the help contents file is \plain\f1\fs18\cf2\b not\plain\f1\fs18\cf2  updated - the \plain\f2\fs18\cf2 :Include\plain\f1\fs18\cf2  lines for the \plain\f1\fs18\cf2\i OpenHelp\plain\f1\fs18\cf2  index and link files may still be required by \plain\f1\fs18\cf2\i OpenHelp\plain\f1\fs18\cf2 . In Delphi 6 and 7 keywords are not removed from the master \plain\f2\fs18\cf2 .als\plain\f1\fs18\cf2  file is not updated - there is no way of knowing if the same keywords are used by other help files.\plain\f0\fs18\cf2 
+\par \pard \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs20\cf1 \protect <BD 2>\plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </BD 2>\plain\f0\fs18\cf2 
+\par \pard \plain\f0\fs18\cf2\i See also:\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs18\cf1 \protect <BU 3>\plain\f0\fs18\cf2 \tab Programs and libraries
+\par }
+
+[Footnotes]
+$=How It Works - Programs and Libraries
+#=PROGSANDLIBS
+K=How it works;How it works,programs and libraries
+@=How It Works CNT topic: describes relationship between the various programs and libraries in the suite.
+[End]
+3
+NS
+1
+BD
+2
+2
+0
+BU
+3
+
+1
+JumpID(IDH_HOWITWORKS)
+1558
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss Arial;}{\f1\fswiss \fcharset0 Arial;}{\f2\fmodern Courier New;}}{\colortbl\red0\green0\blue0;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue255;}\pard \plain \plain\f0\fs20\cf1 \protect <NS 1>\plain\f0\fs8\cf2 
+\par \plain\f0\fs24\cf3\b About CHI's Programs and Libraries\plain\f0\fs20\cf2 
+\par \plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </NS 1>\plain\f0\fs8\cf2 
+\par 
+\par \plain\f0\fs18\cf2 CHI2 provides \plain\f1\fs18\cf2 two\plain\f0\fs18\cf2  ways of installing help into Delphi:
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f1\fs18\cf2 1\plain\f0\fs18\cf2 )\tab Via a GUI application, \plain\f2\fs18\cf2 CHI.exe\plain\f0\fs18\cf2 
+\par \plain\f1\fs18\cf2 2\plain\f0\fs18\cf2 )\tab Via a command line application \plain\f2\fs18\cf2 CHInst.exe\plain\f0\fs18\cf2 
+\par \pard \plain\f0\fs8\cf2 
+\par \plain\f1\fs18\cf2 T\plain\f0\fs18\cf2 hese methods of interacting with CHI are implemented using\plain\f1\fs18\cf2  the above\plain\f0\fs18\cf2  \plain\f1\fs18\cf2 two executable programs and a DLL, \plain\f2\fs18\cf2 CHInstLib.dll\plain\f1\fs18\cf2 , to provide common functionality.\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs20\cf1 \protect <BD 2>\plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </BD 2>\plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2\i See also:\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs20\cf1 \protect <BU 3>\plain\f0\fs18\cf2 \tab How CHI Works
+\par }
+
+[Footnotes]
+$=About CHI - Privacy Statement
+#=IDH_PRIVACY
+K=Privacy statement
+@=About CHI CNT topic: gives details of the privacy statement. This topic is also accessible from the Online Registration dialog box.
+[End]
+2
+NS
+1
+BD
+2
+2
+0
+1181
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss Arial;}{\f1\fswiss \fcharset0 Arial;}}{\colortbl\red0\green0\blue0;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue255;}\pard \plain \plain\f0\fs20\cf1 \protect <NS 1>\plain\f0\fs8\cf2 
+\par \plain\f0\fs24\cf3\b Privacy Statement\plain\f0\fs20\cf2 
+\par \plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </NS 1>\plain\f0\fs8\cf2 
+\par 
+\par \pard \tx400 \plain\f0\fs18\cf2 When you contact \plain\f1\fs18\cf2 DelphiDabbler,\plain\f0\fs18\cf2  any personal information you provide will not be abused. \plain\f1\fs18\cf2 Any email address you provide will be used only to reply to you about any specific query. It will not be added to any mailing list without your express request.
+\par \pard \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 Note that no personal details will be \plain\f1\fs18\cf2 intentionally \plain\f0\fs18\cf2 disclosed to any other company or individual, nor will they be published on the author's website.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs20\cf1 \protect <BD 2>\plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </BD 2>\plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2\i 
+\par }
+
+[Footnotes]
+$=About CHI - Copyright and Licensing
+#=IDH_COPYRIGHT
+K=Copyright;License
+@=About CHI CNT topic: gives copyright information. This topic is displayed by clicking the "More info" label in the about box.
+[End]
+2
+NS
+1
+BD
+2
+2
+0
+1458
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss Arial;}{\f1\fswiss \fcharset0 Arial;}{\f2\fnil \fcharset0 Courier New;}}{\colortbl\red0\green0\blue0;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue255;}\pard \plain \plain\f0\fs20\cf1 \protect <NS 1>\plain\f0\fs8\cf2 
+\par \plain\f0\fs24\cf3\b Copyright and Licensing\plain\f0\fs20\cf2 
+\par \plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </NS 1>\plain\f0\fs8\cf2 
+\par 
+\par \plain\f1\fs18\cf2 This program is copyright \'A9 2001-2010\plain\f0\fs18\cf2  - \plain\f1\fs18\cf2 Peter D Johnson (www.delphidabbler.com), Wales UK.
+\par \plain\f0\fs8\cf2 
+\par \plain\f1\fs18\cf2 The complete end user license agreement is included in the Component Help Installer installation. See \plain\f2\fs18\cf2 License.rtf\plain\f1\fs18\cf2 .
+\par \plain\f1\fs8\cf2 
+\par \plain\f1\fs18\cf2 CHI is open source software. Portions of the source code are released under the Mozilla Public License.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 No warranty is made about the suitability of this software for any application. It is provided "as-is" and is used at your own risk.\plain\f1\fs18\cf2  Please see \plain\f2\fs18\cf2 License.rtf\plain\f1\fs18\cf2  for the complete disclaimer.\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs20\cf1 \protect <BD 2>\plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </BD 2>\plain\f0\fs18\cf2 
+\par }
+
+[Footnotes]
+$=About CHI - Author
+#=AUTHOR
+K=Author;DelphiDabbler
+@=About CHI CNT topic: information about the author, with email and web links.
+[End]
+3
+NS
+1
+BD
+2
+2
+0
+HS
+3
+0
+
+0
+VISITWEBSITE
+
+1065
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss Arial;}{\f1\fswiss \fcharset0 Arial;}}{\colortbl\red0\green0\blue0;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue255;}\pard \plain \plain\f0\fs20\cf1 \protect <NS 1>\plain\f0\fs8\cf2 
+\par \plain\f0\fs24\cf3\b About the Author\plain\f0\fs20\cf2 
+\par \plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </NS 1>\plain\f0\fs8\cf2 
+\par 
+\par \plain\f0\fs18\cf2 I'm Peter Johnson - a hobbyist programmer living in Ceredigion in West Wales, UK. I write mainly in Delphi\plain\f1\fs18\cf2  (and PHP for web programming)\plain\f0\fs18\cf2 . 
+\par \plain\f0\fs8\cf2 
+\par \plain\f1\fs18\cf2 My work is \plain\f0\fs18\cf2 available from \plain\f1\fs18\cf2 my\plain\f0\fs18\cf2  \plain\f0\fs18\cf1 \protect <HS 3>\plain\f1\fs18\cf2 web\plain\f0\fs18\cf2 site\plain\f0\fs18\cf1 \protect </HS 3>\plain\f0\fs18\cf2 .
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs20\cf1 \protect <BD 2>\plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </BD 2>\plain\f0\fs18\cf2 
+\par }
+
+[Footnotes]
+$=Dlg box - Choose Help File
+#=IDH_DLG_CHOOSEHELP
+@=Dlg box topic: Information about using the "Choose help file" dialog box. This topic is also available from the help button in the dialog box.
+[End]
+2
+NS
+1
+BD
+2
+2
+0
+1050
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss Arial;}}{\colortbl\red0\green0\blue0;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue255;}\pard \plain \plain\f0\fs20\cf1 \protect <NS 1>\plain\f0\fs8\cf2 
+\par \plain\f0\fs24\cf3\b Choose Help File Dialog Box\plain\f0\fs20\cf2 
+\par \plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </NS 1>\plain\f0\fs8\cf2 
+\par 
+\par \plain\f0\fs18\cf2 Select the help file you wish to install and click \plain\f0\fs18\cf2\i OK\plain\f0\fs18\cf2 . The full path of the chosen file is entered in the main Window's \plain\f0\fs18\cf2\i Help file\plain\f0\fs18\cf2  edit box on the Install page. The file name can be manually edited in the edit box.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 Click \plain\f0\fs18\cf2\i Cancel\plain\f0\fs18\cf2  to close the dialog box without updating the edit box.
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs20\cf1 \protect <BD 2>\plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </BD 2>\plain\f0\fs18\cf2 
+\par }
+
+[Footnotes]
+$=Dlg box - Choose Destination Folder
+#=IDH_DLG_CHOOSEDESTFOLDER
+@=Dlg box topic: Information about using the "Choose desitnation folder" dialog box. This topic is also available from the help button in the dialog box.
+[End]
+2
+NS
+1
+BD
+2
+2
+0
+1385
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss Arial;}}{\colortbl\red0\green0\blue0;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue255;}\pard \plain \plain\f0\fs20\cf1 \protect <NS 1>\plain\f0\fs8\cf2 
+\par \plain\f0\fs24\cf3\b Choose Destination Folder Dialog Box\plain\f0\fs20\cf2 
+\par \plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </NS 1>\plain\f0\fs8\cf2 
+\par 
+\par \plain\f0\fs18\cf2 Use this dialog box to select the folder where you wish to install the help file. 
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 The selected folder selected must be a local fixed drive - removable, RAM or remote drives can not be used, and the \plain\f0\fs18\cf2\i OK\plain\f0\fs18\cf2  button will be disable when invalid folders are selected. 
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 Click \plain\f0\fs18\cf2\i OK\plain\f0\fs18\cf2  to accept the chosen folder. The full path to the folder is entered in the \plain\f0\fs18\cf2\i Copy help file to\plain\f0\fs18\cf2  edit box on the main program window.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 Click \plain\f0\fs18\cf2\i Cancel\plain\f0\fs18\cf2  to close the dialog box without updating the edit box.
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f0\fs20\cf1 \protect <BD 2>\plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </BD 2>\plain\f0\fs18\cf2 
+\par }
+
+[Footnotes]
+$=File Path Macros
+#=FILEPATHMACROS
+K=File path macros
+@=General sub-topic: explains use of file path macros in the GUI and command line versions of CHI.
+[End]
+6
+NS
+1
+BD
+2
+2
+0
+KP
+3
+KP
+4
+KP
+5
+KP
+6
+4803
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss Arial;}{\f1\fswiss \fcharset0 Arial;}{\f2\fnil \fcharset2 WingDings;}{\f3\fmodern Courier New;}{\f4\fnil \fcharset0 Courier New;}{\f5\fnil \fcharset0 Arial;}}{\colortbl\red0\green0\blue0;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue255;}\pard \plain \plain\f0\fs20\cf1 \protect <NS 1>\plain\f0\fs8\cf2 
+\par \plain\f0\fs24\cf3\b File Path Macros\plain\f0\fs20\cf2 
+\par \plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </NS 1>\plain\f0\fs8\cf2 
+\par 
+\par \plain\f0\fs18\cf2 To assist in accessing files in Delphi's folders (the usual location for help files is in the Help subfolder of a Delphi installation), the following macros can be included at the start of file names  These macros work with the Windows application\plain\f1\fs18\cf2  and \plain\f0\fs18\cf2 the \plain\f0\fs18\cf2\i CHInst\plain\f0\fs18\cf2  command line tool.
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f2\fs18\cf2 \'A7\plain\f0\fs18\cf2 \tab \plain\f3\fs18\cf2 $(ROOT)\plain\f0\fs18\cf2  - this macro is replaced by the path to the root folder of the Delphi installation.
+\par \plain\f2\fs18\cf2 \'A7\plain\f0\fs18\cf2 \tab \plain\f3\fs18\cf2 $(HELP)\plain\f0\fs18\cf2  - this macro is replaced by the path to the help folder of the Delphi installation.
+\par \pard \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 In both cases the installation accessed is the selected version of Delphi. How the version is determined depends on the tool being used:
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f2\fs18\cf2 \'A7\plain\f0\fs18\cf2 \tab \plain\f0\fs18\cf2\i Windows application:\plain\f0\fs18\cf2  the version of Delphi selected in the combo box.
+\par \plain\f2\fs18\cf2 \'A7\plain\f0\fs18\cf2 \tab \plain\f0\fs18\cf2\i Command line tool:\plain\f0\fs18\cf2  the version of Delphi specified in the -v command line switch.
+\par \plain\f0\fs8\cf2 
+\par \pard \plain\f0\fs18\cf2 To use file path macros in the GUI, simply enter them at the start of a path name in the relevant edit box. To use on the command line type the macro name at the start of  a file name.
+\par \plain\f0\fs12\cf2 
+\par \plain\f0\fs18\cf2\b Example using command line tool\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 To install a help file that has been unzipped into \plain\f4\fs18\cf2 C:\\Unzip\plain\f0\fs18\cf2  into Delphi \plain\f1\fs18\cf2 6\plain\f0\fs18\cf2 's help folder, using the command line tool use:
+\par \plain\f0\fs8\cf2 
+\par \pard \li400 \plain\f5\fs18\cf1 \protect <KP 3>\plain\f4\fs18\cf2 CHInst -i C:\\Unzip\\MyHelp.hlp -c\plain\f5\fs18\cf1 \protect </KP 3>\plain\f5\fs18\cf2 
+\par \pard \li800 \plain\f5\fs18\cf1 \protect <KP 4>\plain\f4\fs18\cf2 $(HELP)\\MyHelp.hlp -v6\plain\f5\fs18\cf1 \protect </KP 4>\plain\f0\fs18\cf2 
+\par \plain\f0\fs18\cf1 \protect <KP 5>\plain\f4\fs18\cf2 -d "My Help Description"\plain\f0\fs18\cf1 \protect </KP 5>\plain\f0\fs18\cf2 
+\par \pard \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 ensuring the command is all entered on one line.
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 And, to uninstall the file use
+\par \plain\f0\fs8\cf2 
+\par \pard \li400 \plain\f4\fs18\cf1 \protect <KP 6>\plain\f4\fs18\cf2 CHInst -u $(HELP)\\  MyHelp.hlp -r -x -v3\plain\f4\fs18\cf1 \protect </KP 6>\plain\f0\fs18\cf2 
+\par \pard \plain\f0\fs12\cf2 
+\par \plain\f0\fs18\cf2\b Example using Windows application\plain\f0\fs18\cf2 
+\par \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 To perform the same installation as above, select the install page and:
+\par \plain\f0\fs8\cf2 
+\par \pard \fi-400 \li400 \tx400 \plain\f2\fs18\cf2 \'A7\plain\f0\fs18\cf2 \tab Enter \plain\f0\fs18\cf2\i C:\\Unzip\\MyHelp.hlp\plain\f0\fs18\cf2  in the \plain\f0\fs18\cf2\i Help file\plain\f0\fs18\cf2  edit box\plain\f0\fs18\cf2\i .\plain\f0\fs18\cf2 
+\par \plain\f2\fs18\cf2 \'A7\plain\f0\fs18\cf2 \tab Enter \plain\f0\fs18\cf2\i $(HELP)\\MyHelp.hlp\plain\f0\fs18\cf2  in the \plain\f0\fs18\cf2\i Copy to\plain\f0\fs18\cf2  edit box.
+\par \plain\f2\fs18\cf2 \'A7\plain\f0\fs18\cf2 \tab Select \plain\f0\fs18\cf2\i 3\plain\f0\fs18\cf2  in the \plain\f0\fs18\cf2\i Delphi\plain\f0\fs18\cf2  combo box.
+\par \plain\f2\fs18\cf2 \'A7\plain\f0\fs18\cf2 \tab Click the \plain\f0\fs18\cf2\i Install\plain\f0\fs18\cf2  button.
+\par \pard \tx400 \plain\f0\fs8\cf2 
+\par \plain\f0\fs18\cf2 Uninstallation is acheived by selecting the installed file from the combo box on the \plain\f0\fs18\cf2\i Remove\plain\f0\fs18\cf2  page and clicking the \plain\f0\fs18\cf2\i Remove\plain\f0\fs18\cf2  button.\plain\f0\fs18\cf2\i 
+\par \pard \plain\f0\fs8\cf2 
+\par \plain\f0\fs20\cf1 \protect <BD 2>\plain\f0\fs8\cf2  \plain\f0\fs20\cf1 \protect </BD 2>\plain\f0\fs18\cf2 
+\par }
+
+[Footnotes]
+$=Version drop down
+#=IDH_POPUP_VERSIONCOMBO
+@=What's this help popup: describes use of Delphi version numbers drop-down list.
+[End]
+0
+355
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss Arial;}}{\colortbl\red0\green0\blue0;\red0\green0\blue0;}\pard \plain \plain\f0\fs16\cf1\b Delphi version\plain\f0\fs16\cf1 
+\par This drop-down list displays all the versions of Delphi on this system that support OpenHelp. Choose the target version for this installation.
+\par }
+
+[Footnotes]
+$=Close button
+#=IDH_POPUP_CLOSEBTN
+@=What's this help popup: describes Close button.
+[End]
+0
+318
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss \fcharset0 Arial;}{\f1\fswiss Arial;}}{\colortbl\red0\green0\blue0;\red0\green0\blue0;}\pard \plain \plain\f0\fs16\cf1\b Close button\plain\f1\fs16\cf1 
+\par \plain\f0\fs16\cf1 Click this button to close the program.\plain\f1\fs16\cf1 
+\par }
+
+[Footnotes]
+$=Help button
+#=IDH_POPUP_HELPBTN
+@=What's this help popup: describes Help button.
+[End]
+0
+856
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss \fcharset0 Arial;}{\f1\fswiss Arial;}{\f2\fnil \fcharset2 WingDings;}}{\colortbl\red0\green0\blue0;\red0\green0\blue0;}\pard \plain \plain\f0\fs16\cf1\b Help button\plain\f1\fs16\cf1 
+\par \plain\f0\fs16\cf1 Clicking this drops down a menu of available help and related items:
+\par \pard \fi-240 \li240 \tx240 \plain\f2\fs16\cf1 \'A7\plain\f0\fs16\cf1 \tab Contents - displays help contents page
+\par \plain\f2\fs16\cf1 \'A7\plain\f0\fs16\cf1 \tab How CHI Works - describes how CHI installs open help
+\par \plain\f2\fs16\cf1 \'A7\plain\f0\fs16\cf1 \tab Visit the DelphiDabbler Website - click to go online to the website (CHI updates are published here)
+\par \plain\f2\fs16\cf1 \'A7\plain\f0\fs16\cf1 \tab About - about box and copyright information.\plain\f1\fs18\cf1 
+\par }
+
+[Footnotes]
+$=Help file edit box and button
+#=IDH_POPUP_HELPFILEEDIT
+@=What's this help popup: describes help file edit box and button on Install page.
+[End]
+0
+498
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss \fcharset0 Arial;}{\f1\fswiss Arial;}}{\colortbl\red0\green0\blue0;\red0\green0\blue0;}\pard \plain \plain\f0\fs16\cf1\b Help file\plain\f1\fs16\cf1 
+\par \plain\f0\fs16\cf1 Enter the name of the help file to be installed in the edit control or click the adjacent Browse button and choose the file from a dialog box. You can also drag a help file from Explorer and drop it anywhere on the window.\plain\f1\fs18\cf1 
+\par }
+
+[Footnotes]
+$=Copy to edit box and button
+#=IDH_POPUP_HELPFILEDESTEDIT
+@=What's this help popup: describes Copy To edit box and browse button on Install page.
+[End]
+0
+533
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss \fcharset0 Arial;}{\f1\fswiss Arial;}}{\colortbl\red0\green0\blue0;\red0\green0\blue0;}\pard \plain \plain\f0\fs16\cf1\b Copy to\plain\f1\fs16\cf1 
+\par \plain\f0\fs16\cf1 Enter the name of the folder the help file named above is to be installed into in the edit box or click the adjacent Browse button and choose the folder from a dialog box. If this control is left blank, the help file will be installed in its current location.\plain\f1\fs18\cf1 
+\par }
+
+[Footnotes]
+$=Description edit control
+#=IDH_POPUP_DESCEDIT
+@=What's this help popup: describes Description edit box.
+[End]
+0
+337
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss \fcharset0 Arial;}{\f1\fswiss Arial;}}{\colortbl\red0\green0\blue0;\red0\green0\blue0;}\pard \plain \plain\f0\fs16\cf1\b Description\plain\f1\fs16\cf1 
+\par \plain\f0\fs16\cf1 Enter a brief description of the help file here (optional).\plain\f1\fs18\cf1 
+\par }
+
+[Footnotes]
+$=Install button
+#=IDH_POPUP_INSTALLBTN
+@=What's this help popup: information on using Install button.
+[End]
+0
+417
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss \fcharset0 Arial;}{\f1\fswiss Arial;}}{\colortbl\red0\green0\blue0;\red0\green0\blue0;}\pard \plain \plain\f0\fs16\cf1\b Install button\plain\f1\fs16\cf1 
+\par \plain\f0\fs16\cf1 Click this button to install the help file named in the "Help file" edit control. Ensure that the required information is entered above.\plain\f1\fs18\cf1 
+\par }
+
+[Footnotes]
+$=Help file combo
+#=IDH_POPUP_HELPFILECOMBO
+@=What's this help popup: information about the file combo box on the Remove tab.
+[End]
+0
+382
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss \fcharset0 Arial;}{\f1\fswiss Arial;}}{\colortbl\red0\green0\blue0;\red0\green0\blue0;}\pard \plain \plain\f0\fs16\cf1\b Help file\plain\f1\fs16\cf1 
+\par \plain\f0\fs16\cf1 Lists the help files that have been installed into this version of Delphi by CHI. Select a file to remove.\plain\f1\fs18\cf1 
+\par }
+
+[Footnotes]
+$=Remove file reference from registry
+#=IDH_POPUP_UNREGCHK
+@=What's this help popup: information about the "Remove file reference from registry" check box on Remove tab.
+[End]
+0
+402
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss \fcharset0 Arial;}{\f1\fswiss Arial;}}{\colortbl\red0\green0\blue0;\red0\green0\blue0;}\pard \plain \plain\f0\fs16\cf1\b Remove file reference from registry\plain\f1\fs16\cf1 
+\par \plain\f0\fs16\cf1 Check this box to remove the reference to the help file from the Windows registry when uninstalling.\plain\f1\fs18\cf1 
+\par }
+
+[Footnotes]
+$=Delete the help file
+#=IDH_POPUP_DELETEFILECHK
+@=What's this help popup: information about the "Delete the help file" check box on Remove tab.
+[End]
+0
+354
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss \fcharset0 Arial;}{\f1\fswiss Arial;}}{\colortbl\red0\green0\blue0;\red0\green0\blue0;}\pard \plain \plain\f0\fs16\cf1\b Delete the help file\plain\f1\fs16\cf1 
+\par \plain\f0\fs16\cf1 Check this box to delete the help file from disk when uninstalling.\plain\f1\fs18\cf1 
+\par }
+
+[Footnotes]
+$=Remove button
+#=IDH_POPUP_REMOVEBTN
+@=What's this help popup: information about the Remove button.
+[End]
+0
+349
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss \fcharset0 Arial;}{\f1\fswiss Arial;}}{\colortbl\red0\green0\blue0;\red0\green0\blue0;}\pard \plain \plain\f0\fs16\cf1\b Remove button\plain\f1\fs16\cf1 
+\par \plain\f0\fs16\cf1 Click to uninstall the help file selected in the Help file combo box.\plain\f1\fs18\cf1 
+\par }
+
+[Footnotes]
+$=Install and Remove tabs
+#=IDH_POPUP_TABS
+@=What's this help popup: information about the Install and Remove tabs
+[End]
+0
+392
+{\rtf1\ansi\ansicpg1252\deff0\deftab720\deflang2057{\fonttbl{\f0\fswiss \fcharset0 Arial;}{\f1\fswiss Arial;}}{\colortbl\red0\green0\blue0;\red0\green0\blue0;}\pard \plain \plain\f0\fs16\cf1\b Install / Remove tabs\plain\f1\fs16\cf1 
+\par \plain\f0\fs16\cf1 Select the Install tab to install help files and the Remove tab to unistall a previously installed file.\plain\f1\fs18\cf1 
+\par }
+

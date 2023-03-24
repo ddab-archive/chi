@@ -1,0 +1,205 @@
+================================================================================
+DelphiDabbler Component Help Installer v3 - Build Notes
+
+$Rev: 74 $
+$Date: 2010-05-10 17:04:57 +0100 (Mon, 10 May 2010) $
+================================================================================
+
+
+Requirements
+============
+
+Programs
+--------
+
+Component Help Installer (CHI) v3 requires the following programs in order to
+build the required binaries:
+
++  Delphi 7
+
++  Borland BRCC32 resource compiler. Supplied with Delphi 7 in the \bin
+   directory. Required to build resource binaries from .rc files.
+
++  DelphiDabbler Version Information Editor (VIEd). Available from
+   <URL:http://www.delphidabbler.com/software/vied>. Required to create version
+   information .rc files from .vi files.
+
++  Microsoft HCRTF help compiler. Supplied with Delphi 7 in the \Help\Tools\
+   directory. Required to create the WinHelp help file from the source .hpj and
+   .rtf files.
+
++  Inno Setup, with the ISPP pre-processor installed. Get Inno setup from
+   <URL:http://www.jrsoftware.org/>. This is used to build the program's
+   installer and is not required if you don't intend to create a new install
+   program.
+
+Components
+----------
+
+In addition, the following components and units from the DelphiDabbler code
+library are required. Each component or unit must be installed into the Delphi
+IDE:
+
++  Version Information Component
+   <URL:http://www.delphidabbler.com/software/verinfo>.
+
++  System Information Unit
+   <URL:http://www.delphidabbler.com/software/sysinfo>.
+
++  Message Dialog Components
+   <URL:http://www.delphidabbler.com/software/msgdlg>.
+
++  Drop Files Components
+   <URL:http://www.delphidabbler.com/software/dropfiles>.
+
++  Shell Folders Unit
+   <URL:http://www.delphidabbler.com/software/shellfolders>.
+
++  About Box Component
+   <URL:http://www.delphidabbler.com/software/aboutbox>.
+
+Environment Variables
+---------------------
+
+To use the build batch files you need to set up the following environment
+variables:
+
++  DELPHIROOT
+   This must be set to the root Delphi install directory. Required by both
+   BuildHelp.bat and BuildAllRC.bat.
+
++  VIEDROOT
+   Must be set to the install directory of VIEd unless VIEd is on the path in
+   which case this environment variable is not required. Required by
+   BuildAllRC.bat.
+
+
+Getting the Source Code
+=======================
+
+The source code can be downloaded from DelphiDabbler.com via at the following
+address: <URL:http://www.delphidabbler.com/software/chi/download>.
+
+The source code is available in two different formats
+
+Zip file containing CHI v3.0.0 Source Code
+------------------------------------------
+
+This zip file contains the source code of the v3.0.0 release. To use the source
+you should create a new folder to hold it and then unzip the file, preserving
+the directory structure.
+
+Subversion Repository Dump
+--------------------------
+
+This file contains a dump of a Subversion repository that contains the source
+code of CHI going back to v2.2.1. The repository contains all changes up until
+release 3.0.0.
+
+It contains branches off the "tags" branch that contain the exact source of
+both releases 2.2.1 and 3.0.0. The "trunk" branch contains the current
+development tree, which as supplied is the same as the v3.0.0 "tags" branch.
+You should use the "trunk" branch to make any changes. The "tags" branches
+should be left unchanged. Snapshots of any new releases should be added here.
+
+To use repository, proceed as follows.
+
+1)  Download the zip file containing the repository dump and extract the
+    file chi-svndump from it.
+
+2)  Create a new, empty directory to hold the repository.
+
+3)  Do "svnadmin create REPO-PATH", without the quotes, where REPO-PATH is the
+    path to the new directory.
+
+4)  Do "svnadmin load REPO-PATH <DUMP-FILE", again without the quotes, where
+    REPO-PATH is as before and DUMP-FILE is the fully specified file name to
+    chi-svndump.
+
+Checkout a working copy of the "trunk" branch into a clean folder to work on.
+
+
+Development tree
+================
+
+Once the source code has been downloaded or checked out of the repository you
+will have a partial development tree. You should have the following "root"
+folders:
+
+ .\
+ .\DevTools
+ .\Docs
+ .\Src
+
+In order to compile CHI you will also need to create the following folders:
+
+  .\Bin
+  .\Bin\CHI
+  .\Bin\CHInst
+  .\Bin\CHInstLib
+  .\Bin\Shared
+  .\Exe
+
+Once that is done you will have the following:
+
+  .\                     Project root folder: no files
+  .\Bin                  Base folder for binary files: .dcu and .res
+  .\Bin\CHI              Binary files for CHI windows application
+  .\Bin\CHInst           Binary files for CHInst command line program
+  .\Bin\CHInstLib        Binary files for CHInstLib DLL
+  .\Bin\Shared           Binary files shared between different projects
+  .\DevTools             Tools used to assist development
+  .\Docs                 Documentation
+  .\Exe                  Executable programs, DLLs and help files
+  .\Src                  Source code tree root: project group file stored here
+  .\Src\CHI              Source code for CHI Windows application
+  .\Src\CHI\Help         Help file source code
+  .\Src\CHInst           Source code for CHInst command line program
+  .\Src\CHInstLib        Source code for CHInstLib DLL
+  .\Src\Install          Inno Setup script for setup program
+  .\Src\Shared           Source code shared between programs / DLLs in project
+  .\Src\Shared\Graphics  Graphic files
+  .\Src\Shared\Intf      Interface definition units
+  .\Src\Shared\Support   Source code for units shared between different projects
+
+
+Building the Projects
+=====================
+
+To build the projects run .\DevTools\BuildAllRC.bat to create the
+required resource files. These files will be placed in a suitable .\Bin folder.
+
+Next load the project group into Delphi 7 and build each project. .dcu files
+will be placed in a suitable .\Bin folder and executables will appear in the
+.\Exe folder.
+
+Now run .\DevTools\BuildHelp.bat to compile the .hlp file into the .\Exe folder
+and copy the .cnt file into .\Exe.
+
+Finally create the install file by loading .\Install\Install.iss into the Inno
+Setup IDE and compiling it from there. The resulting setup file will be named
+using the product version number from CHI's version information resources and
+will be placed in the .\Exe folder.
+
+
+Licensing
+=========
+
+This is an open source project, and must remain so. All source code is released
+under the Mozilla Public license (see <URL:http://www.mozilla.org/MPL/MPL-1.1>)
+and other open source licenses.
+
+Any executable code built from this code base is also subject to the main
+program's end user license agreement. This license is included in the .\Docs
+directory as License.rtf.
+
+
+Development Frozen
+==================
+
+Development of CHI has been frozen and future releases from DelphiDabbler are
+unlikely. You are welcome to take over this project providing the open source
+nature of the code is maintained under the terms of the applicable licenses.
+
+If you do take over the project, please let DelphiDabbler know via
+<URL:http://www.delphidabbler.com/contact>.

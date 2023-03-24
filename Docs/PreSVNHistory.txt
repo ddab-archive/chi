@@ -1,0 +1,1075 @@
+================================================================================
+
+CHI: Historical update information up to and including v2.2.1
+
+================================================================================
+
+This file records known changes to files and releases of CHI from the first
+release until release 2.2.1 when the project was placed was placed under version
+control with Subversion.
+
+There are two sections:
+  + Files: Lists all source code and development tools and provides details of
+    changes to these files that preceded version control.
+  + Releases: Lists all the releases of the various CHI projects and notes which
+    file revisions were included in each release.
+
+================================================================================
+FILES
+================================================================================
+
+This section lists all files for which update history is known between the first
+released version of the utilities and release 0.2.5.
+
+Change history of development tools, the install script and various images is
+not recorded.
+
+All following file names are relative to the project's Src directory.
+
+--------------------------------------------------------------------------------
+CHI\CHI.dpr
+--------------------------------------------------------------------------------
+v1.0 of 06 Apr 2001  - Original version.
+v1.1 of 06 Jan 2002  - Added UCHIFileNames unit to get name of referenced GUI
+                       DLL rather than hard wiring name.
+v1.2 of 23 May 2003  - Replaced resource file PJSoftIcon.res with CHIIcon.res:
+                       contains new program icon.
+v2.0 of 20 Jul 2003  - Can now either display main GUI application or display
+                       just the Install Experts dialog box, according to command
+                       line switch. Switches are:
+                       - no switch - start main GUI application.
+                       - switch "-e" - display Install Experts dialog and
+                         terminate when dialog closed (dialog itself registers /
+                         unregisters CHI add-in Delphi expert).
+                       - switch "-e1" - as -e except that a message is displayed
+                         when dialog is closed informing that experts can be
+                         registered / unregistered later.
+                       - switch "u" - silently (no window displayed) unregisters
+                         the CHI expert DLL with all available versions of
+                         Delphi.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+CHI\CHIVerInfo.rc
+--------------------------------------------------------------------------------
+v1.0 of 06 Apr 2001  - Original version.
+v1.1 of 06 Jan 2002  - Updated file & product versions # to 1.0.99.1.
+                     - Updated product version # to 1.99.0.1.
+                     - Updated file version string to 1.1 Beta 1.
+                     - Updated product version string to 2.0 Beta 1.
+                     - Added PRERELEASE flag to file flags.
+                     - Added 2001 to start of copyright date range.
+v1.2 of 13 Jan 2002  - Added VS_FF_PATCHED file flag.
+                     - Added special build string "Patch 1" and added special
+                       build to product version.
+        23 May 2003  - DELETED (see CHIVerInfo.vi)
+
+--------------------------------------------------------------------------------
+CHI\CHIVerInfo.vi
+--------------------------------------------------------------------------------
+        23 May 2003  - Original version: supersedes CHIVerInfo.rc
+                     - References to PJSoft changed to DelphiDabbler.
+                     - Deleted special build string.
+                     - Incremented beta version to 2.
+                     - VS_FF_PATCHED file flag removed.
+        19 Jul 2003  - Updated version and product numbers.
+                     - Deleted references to beta code.
+        22 Aug 2003  - Updated file and product numbers and added build number
+                       to file version string.
+        17 Apr 2004  - Updated file, product and build numbers.
+        13 Nov 2005  - Updated file, product and build numbers.
+                     - Changed LegalCopyright to MPL.
+        12 Dec 2005  - Updated product and build number.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+CHIExp\CHIExp.dpr
+--------------------------------------------------------------------------------
+v1.0 of 19 Jul 2003  - Original version.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+CHIExp\CHIExpVerInfo.vi
+--------------------------------------------------------------------------------
+        19 Jul 2003  - Original version information file.
+        22 Aug 2003  - Updated file and product number.
+        17 Apr 2004  - Updated file, product and build numbers and added build
+                       number to file version string.
+        13 Nov 2005  - Updated file, product and build numbers.
+                     - Changed LegalCopyright to MPL.
+        12 Dec 2005  - Updated product and build number.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+CHIExp\UCHIExpert.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Apr 2001  - Original version named PJCHIExpert.pas.
+                     - This was a source file designed for the user to install
+                       into a Delphi package.
+v1.1 of 24 Jun 2001  - Fixed bug which was failing to convert Delphi version
+                       string into a number in locales that don't use '.' as
+                       decimal separator.
+v1.2 of 06 Jan 2002  - Now pass reference to Delphi application handle to call
+                     - into librarie's GUI DLL so that dialog displayed by DLL
+                       becomes owned by Delphi.
+                     - Moved literal strings to constants and resourcestrings.
+                     - Added custom procedure to replace '.' in version numbers
+                       with correct decimal separator for locale (previous
+                       version had used routine not supported on Delphi 3).
+v1.3 of 13 Jan 2002  - Fixed bug where wrong registry key was being searched for
+                       path to DLLs.
+v1.4 of 23 May 2003  - Replaced TRegistry.OpenKey with OpenKeyReadOnly in
+                       TPJCHIExpert.ExpertDLLPath.
+                     - Renamed constant names and values using PJSoft to
+                       DelphiDabbler.
+                     - Changed registry name entry from PJSoft to DelphiDabbler.
+v2.0 of 19 Jul 2003  - Changed unit name from PJCHIExpert.pas to UCHIExpert.pas.
+                     - Revised purpose of unit. It now provides core
+                       functionality of Delphi add-in in expert DLL whereas v1
+                       of this code was a source code file designed for
+                       installing into a Delphi design time package.
+                     - Removed expert registration routines - only required for
+                       package based experts.
+                     - Removed reference to Application object and replaced by
+                       calls to ToolServices.
+                     - Removed reference to Forms unit.
+                     - Added reference to UCHIInfo unit.
+                     - Removed ExpertDLLPath method - now uses equivalent
+                       function in UCHIInfo unit.
+                     - Expert's unique id string and GUI DLL path now provided
+                       by UCHIInfo unit rather than internal code.
+                     - MenuItemClick method now traps all exceptions and
+                       re-raises them in Delphi via ToolServices.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+CHIInst\CHIInst.dpr
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version.
+v1.1 of 22 Aug 2003  - Deleted reference to UDelphiInfo unit - unused.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+CHIInst\CHIInstVerInfo.rc
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version
+v1.2 of 13 Jan 2002  - Added VS_FF_PATCHED file flag.
+                     - Added special build string "Patch 1" and added special
+                       build to product version.
+        23 May 2003  - DELETED (see CHIInstVerInfo.vi)
+
+--------------------------------------------------------------------------------
+CHIInst\CHIInstVerInfo.vi
+--------------------------------------------------------------------------------
+        23 May 2003  - Original version: supersedes CHIInstVerInfo.rc
+                     - References to PJSoft changed to DelphiDabbler.
+                     - Deleted special build string.
+                     - Incremented beta version to 2.
+                     - VS_FF_PATCHED file flag removed.
+        18 Jul 2003  - Updated version and product numbers.
+                     - Deleted references to beta code.
+        22 Aug 2003  - Updated file and product numbers.
+        17 Apr 2004  - Updated file and product numbers and added build number
+                       to file version string.
+        13 Nov 2005  - Updated file, product and build numbers.
+                     - Changed LegalCopyright to MPL.
+        12 Dec 2005  - Updated product and build number.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+CHIInst\UCHIInstError.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version for CHI2 beta 1.
+v1.1 of 11 May 2003  - Added new error message re user privileges for
+                     - installing help file.
+v1.2 of 20 Jul 2003  - Added "no error" item with Ord value 0 to ensure all
+                       errors have ordinal value > 0 which can be detected
+                       using ERRORLEVEL in batch files.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+CHIInst\UController.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version.
+v1.1 of 11 May 2003  - Added detection of required privileges - raise exception
+                       if user doesn't have them. An additional routine was
+                       imported from from CHInstLib.dll to enable this.
+v1.2 of 20 Jul 2003  - Now displays WinHelp help file at the Console
+                       Application's overview topic when required.
+                     - Made so that most errors will respect quiet flag if error
+                       occurs after -q flag has been parsed.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+CHIInst\UParamParser.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version.
+v1.1 of 20 Jul 2003  - Changed to recognise -h parameter as different to -?
+                       parameter and made ShowHelp property have three possible
+                       values rather than previous True/False values according
+                       to help switch.
+                     - Added code to set default version to 4 in absence of
+                       command line switch.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+CHIInst\UReporter.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version for CHI2 beta 1.
+v1.1 of 11 May 2003  - Changed sign on message to refer to DelphiDabbler rather
+                       than PJSoft.
+                     - Updated copyright date.
+                     - Included v7 in note of valid Delphi versions.
+                     - Modified a few other messages for clarity.
+v1.2 of 18 Jul 2003  - Revised help text displayed on console to refer to new
+                       WinHelp switch.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+CHIInstLib\CHIInstLib.dpr
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+CHIInstLib\CHInstLibVerInfo.rc
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version
+v1.2 of 13 Jan 2002  - Added VS_FF_PATCHED file flag.
+                     - Added special build string "Patch 1" and added special
+                       build to product version.
+        23 May 2003  - DELETED (see CHInstLibVerInfo.vi)
+
+--------------------------------------------------------------------------------
+CHIInstLib\CHInstLibVerInfo.vi
+--------------------------------------------------------------------------------
+        23 May 2003  - Original version: supersedes CHIInstVerInfo.rc
+                     - References to PJSoft changed to DelphiDabbler.
+                     - Deleted special build string.
+                     - Incremented beta version to 2.
+                     - VS_FF_PATCHED file flag removed.
+        18 Jul 2003  - Updated version and product numbers.
+                     - Deleted references to beta code.
+        22 Aug 2003  - Updated file and product numbers.
+        17 Apr 2004  - Updated file and product numbers and added build number
+                       to file version string.
+        13 Nov 2005  - Updated file, product and build numbers.
+                     - Changed LegalCopyright to MPL.
+        12 Dec 2005  - Updated file, product and build number.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+CHIInstLib\UCHInstaller.pas
+--------------------------------------------------------------------------------
+        06 Jan 2002  - MOVED FROM PJCHI project. Formerly named
+                       PJCHI\UCHInstaller.pas.
+v2.0 of 06 Jan 2002  - Total rewrite for CHI 2 beta 1:
+                       - Installer / uninstaller are now part of single class
+                         that is exported from DLL.
+                       - Replaced all hard-wired text and file names with
+                         constants, resource strings, function calls etc.
+v2.1 of 12 May 2003  - Revised TCHIInstall to use a different method to register
+                       help files - now updates Delphi's index and link files
+                       rather than using own config file. This new method works
+                       with later versions of Delphi. Uses config file only to
+                       maintain a list of files installed by CHI. Now clears
+                       various WinHelp generated housekeeping files whenever
+                       OpenHelp is updated to ensure changes take effect
+                       immediately.
+                     - Replaced TRegistry.OpenKey with OpenKeyReadOnly in
+                       RegisteredHelpFilePath function.
+                     - Added method to TCHIInfo to detect whether user has
+                       required privileges to update registry.
+                     - Changed name of CHI config file since function has now
+                       changed and overwriting old version may break a help
+                       installation.
+                     - Added constants for help file extensions: ohi, ohl, gid,
+                       ftg and hlp.
+v2.2 of 18 Jul 2003  - Fixed bug in RegisteredHelpFilePath method which was not
+                       returning '' when the required value doesn't exist in
+                       registry.
+v2.3 of 13 Nov 2005  - Added ability to merge ALS files into Delphi ALS file
+                       when running under Delphi 6 and 7.
+v2.4 of 12 Dec 2005  - Fixed bug causing a crash when no .als file is present
+                       when installing help files for Delphi 6 & 7.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+CHIInstLib\UOpenHelpCntFile.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version (for CHI2 beta 1).
+v1.1 of 11 May 2003  - Changed TCHICfgFile class to read / write only a custom
+                       :Include token to CHI config file - this file is now only
+                       used internally by CHI and no longer used by Delphi help.
+                     - Deleted TDelphiCntFile class - all .cnt format classes
+                       now processed by TOpenHelpCntFile class.
+                     - Changed comments in CHI config file to refer to
+                       DelphiDabbler rather than PJSoft.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+PJCHI\FmAbout.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version for CHI2 beta 1.
+v1.1 of 11 May 2003  - Upgraded version information component to release 3 and
+                       changed unit name from VInfo to PJVersionInfo.
+                     - Updated copyright date and message.
+v1.2 of 19 Jul 2003  - Changed method used to display information about
+                       libraries - renamed one of the version information
+                       components and used it to get information for all library
+                       files.
+                     - Replaced reference to USettings unit with UCHIInfo unit
+                       reference.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+PJCHI\FmApp.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Apr 2001  - Original version.
+v1.1 of 09 Jun 2001  - Made exclude Delphi versions other than 3 and 4 from list
+                       of available versions instead of just excluding versions
+                       less than 3 (CHI doesn't work with Delphi 5).
+                     - Added method and version info component to get the
+                       application's version info.
+v1.2 of 24 Jun 2001  - Fixed bug which was failing to convert Delphi version
+                       string into a number in locales that don't use '.' as
+                       decimal separator.
+v2.0 of 06 Jan 2002  - Rewrite for CHI2 beta 1
+                       - Moved registry key / value literals to separate unit.
+                       - Added ExecuteAsApp procedure to this unit: was
+                         previously in PJCHI.dpr project file.
+                       - Added new method override to indicate to base class
+                         that CHI is running as an application.
+v2.1 of 23 May 2003  - Upgraded version information component to release 3 and
+                       changed unit name from VInfo to PJVersionInfo.
+                     - Added application exception handler to display unhandled
+                       exceptions in own dialog box. This handler was moved
+                       from parent form class.
+                     - Fixed tab order for form.
+v2.2 of 20 Jul 2003  - Changed GetDelphiVersions function to scan only thru
+                       supported Delphi versions rather than range
+                       1..High(Byte).
+                     - Added Experts button and code to call Options dialog box
+                       used to configure add-in experts.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+PJCHI\FmAppLogo.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version for CHI2 beta 1.
+v1.1 of 11 May 2003  - Upgraded version information component to release 3 and
+                       changed unit name from VInfo to PJVersionInfo.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+PJCHI\FmAutoLogo.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version for CHI2 beta 1.
+v1.1 of 11 May 2003  - Changed logo from PJSoft to DelphiDabbler.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+PJCHI\FmAutoText.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+PJCHI\FmBase.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Apr 2001  - Original version.
+v1.1 of 09 Jun 2001  - Added FormShow event handler and supporting code to
+                       detect current version of Delphi and close window with
+                       error message unless version is 3 or 4.
+                     - Made Help button display a pop-up menu giving choice of
+                       either help overview topic or topic that tells how CHI
+                       works.
+                     - Changed about box to display version info of DLL rather
+                       than application (when hosted by CHI.exe) and information
+                       about host application.
+v2.0 of 06 Jan 2002  - Total rewrite of code for CHI2 beta 1:
+                       - Replaced old installer / uninstaller classes with
+                         object from CHInstLib.dll which is loaded dynamically
+                         so DLL can be found when using expert.
+                       - Changed supported versions check methodology.
+                       - Moved registry key / value literals to separate unit.
+                       - Added exception handling code to trap all exceptions.
+                       - Moved file handling and interogation code to separate
+                         units.
+                       - Fixed bug in handling of browse for folder dialog box
+                         where OK button was remaining disabled after invalid
+                         folder was selected even when valid one selected.
+                       - Moved all literal strings to constants or
+                         resourcestrings as appropriate.
+                       - Now only un-installs files installed with this version
+                         of CHI.
+                       - Improved error trapping and handling.
+                       - Can now drag and drop help source files onto install
+                         page.
+                       - Changed code to display about box to call custom
+                         dialog box rather than a PJMessageDialog.
+                       - Added new abstract method to indicate whether CHI is
+                         running as expert or application.
+v2.1 of 23 May 2003  - Added check for registry write privileges - halts program
+                       if no such privileges exist.
+                     - Corrected error checking in code that loads CHIInst.dll:
+                       now detects failure to load DLL as well as failure to find
+                       exported routines.
+                     - Improved handling anddisplay of fatal errors.
+                     - Upgraded version information component to release 3 and
+                       changed unit name from VInfo to PJVersionInfo.
+                     - Deleted redundant help call-back code that was used when
+                       we displayed file open dlg from Windows API rather than
+                       component.
+                     - Changed to use new constant names from UGenInfo.
+                     - Removed Application event handler (and moved to the
+                       derived application form). This has been done because it
+                       is important that Delphi is allowed to handle exceptions
+                       when this application is running as an expert.
+                     - Changed ErrorBox to use MessageDlg rather than component.
+                     - Changed website menu item from PJSoft to DelphiDabbler.
+v2.2 of 19 Jul 2003  - Removed "Email your comments" hot link from main window
+                       and replaced with a similar menu item on Help menu.
+                     - Removed help button associated with the "Email your
+                       comments" hot link.
+                     - Removed "How to Help Test CHI" menu item from help
+                       button.
+                     - Added reference to new UCHIInfo unit.
+v2.3 of 22 Aug 2003  - Modified ErrorBox routine to optionally display custom
+                       title.
+                     - Modified message displayed when no installation of Delphi
+                       detected.
+v2.4 of 17 Apr 2004  - Added label under combo box on remove page to show
+                       installed path of selected help file.
+                     - Fixed bug that prevented help file from being
+                       unregistered with Delphi if it is not registered with
+                       Windows.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+PJCHI\FmExpert.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Apr 2001  - Original version.
+v1.1 of 09 Jun 2001  - Added method to return name and version of Delphi using
+                       the expert.
+v2.0 of 06 Jan 2002  - Rewrite for CHI2 beta 1:
+                       - Moved registry key / value literals to separate unit.
+                       - Moved file handling and interogation code to separate
+                         units.
+                       - Added ExecuteAsExpert procedure that was previously in
+                         PJCHI.dpr project file.
+                       - Added new method override to indicate to base class
+                         that CHI is running as an expert.
+v2.1 of 11 May 2003  - Upgraded version information component to release 3 and
+                       changed unit name from VInfo to PJVersionInfo.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+PJCHI\FmOptions.pas
+--------------------------------------------------------------------------------
+v1.0 of 20 Jul 2003  - Original version.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+PJCHI\FmRegister.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version for CHI2 beta 1.
+v1.1 of 23 May 2003  - Upgraded version information component to release 3 and
+                       changed unit name from VInfo to PJVersionInfo.
+                     - Updated method used to access new registration page. No
+                       longer copy information to clipboard (now all passed via
+                       URL).
+                     - Dialog box text updated re registration changes and made
+                       OS and version labels localisable.
+                     - Changed to use new constant names from UGenInfo.
+                     - Fixed error where, when running as expert, Delphi version
+                       number reported instead of CHIs when registering.
+v1.2 of 19 Jul 2003  - Replaced reference to USettings unit with reference to
+                       UCHIInfo unit.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+PJCHI\FmSplash.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version for CHI2 beta 1.
+v1.1 of 11 May 2003  - Upgraded version information component to release 3 and
+                       changed unit name from VInfo to PJVersionInfo.
+                     - Ammended text of dialog box (re new copyright date and
+                       testing required).
+v1.2 of 19 Jul 2003  - Removed description of testing required in beta version,
+                       along with code to display associated help page.
+                     - Changed welcome message so that it doesn't refer to Beta
+                       version (and also changed welcome message font).
+                     - Added reference to new UCHIInfo unit.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+PJCHI\PJCHI.dpr
+--------------------------------------------------------------------------------
+v1.0 of 06 Apr 2001  - Original version.
+v2.0 of 06 Jan 2002  - Added new units: USettings, UGenInfo, IntfCHIInst,
+                       UErrors, UFileUtils, UDelphiInfo, UCHIFileNames,
+                       UDelphiVerInfo, FmAutoText, FmAutoLogo, FmAppLogo,
+                       FmAbout, FmSplash and FmRegister.
+                     - Removed unit: UCHInstaller - now used by CHInstLib.dll.
+                     - Moved definitions of exported procedures into FmApp and
+                       FmExpert units.
+v2.1 of 23 May 2003  - Changed resource file from PJSoftIcon.res to CHIIcon.res
+                       for new program icon.
+v2.2 of 20 Jul 2003  - Added new FmOptions and UCHIInfo units to project.
+                     - Added new DisplayOptions routine to list of exported
+                       routines. This routine causes the Experts configuration
+                       dialog to be displayed as the program's main window.
+                     - Added new UnregisterAllExperts routine to list of
+                       exported routines. This routine unregisters CHI add-in
+                       expert from all available Delphi versions.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+PJCHI\PJCHIVerInfo.rc
+--------------------------------------------------------------------------------
+v1.0 of 06 Apr 2001  - Original version.
+v1.1 of 09 Jun 2001  - Revised product and version numbers to 1.1.
+v1.2 of 09 Jun 2001  - Revised product and version numbers to 1.2.
+v1.3 of 06 Jan 2002  - Updated file & product versions # to 1.0.99.1.
+                     - Updated product version # to 1.99.0.1.
+                     - Updated file version string to 2.0 Beta 1.
+                     - Updated product version string to 2.0 Beta 1.
+                     - Added PRERELEASE flag to file flags.
+                     - Added 2001 to start of copyright date range.
+v1.4 of 13 Jan 2002  - Added VS_FF_PATCHED file flag.
+                     - Added special build string "Patch 1" and added special
+                       build to product version.
+        23 May 2003  - DELETED (see PJCHIVerInfo.vi)
+
+--------------------------------------------------------------------------------
+PJCHI\PJCHIVerInfo.vi
+--------------------------------------------------------------------------------
+        23 May 2003  - Original version: supersedes CHIInstVerInfo.rc
+                     - References to PJSoft changed to DelphiDabbler.
+                     - Deleted special build string.
+                     - Incremented beta version to 2.
+                     - VS_FF_PATCHED file flag removed.
+        18 Jul 2003  - Updated version and product numbers.
+                     - Deleted references to beta code.
+        22 Aug 2003  - Updated file and product numbers.
+        17 Apr 2004  - Updated file and product numbers and added build number
+                       to file version string.
+        13 Nov 2005  - Updated file, product and build numbers.
+                     - Changed LegalCopyright to MPL.
+        12 Dec 2005  - Updated product and build number.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+PJCHI\UCHInstaller.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Apr 2001  - Original version.
+        06 Jan 2002  - MOVED TO CHIInstLib as CHIInstLib\UCHInstaller.pas
+
+--------------------------------------------------------------------------------
+PJCHI\UGenInfo.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version for CHI2 beta 1.
+v1.1 of 23 May 2003  - Changed web URL to DelphiDabbler site from PJSoft site.
+                     - Changed pjsoft@freeuk.com contact email address to
+                       delphidabbler@contactbox.co.uk.
+                     - Changed name of constants (removing "PJSoft" prefixes).
+                     - Deleted logo resource name: logo is stored in relevant
+                       form file.
+                     - Changed registration page URL.
+                     - Changed name of program icon resource.
+v1.2 of 18 Jul 2003  - Changed email address from delphidabbler@contactbox.co.uk
+                       to and address on delphidabbler.com.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+PJCHI\UHelpInfo.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Apr 2001  - Original version.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+PJCHI\USettings.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version for CHI2 beta 1.
+v1.1 of 11 May 2003  - Replaced TRegistry.OpenKey with OpenKeyReadOnly in
+                       GetShowSplashScreen and InstallDir functions.
+                     - Changed registry keys for HKCU and HKLM to be under
+                       Software\DelphiDabbler rather than PJSoft.
+                     - Made registry key error message more informative.
+                     - Improved checks for install path in registry.
+v2.0 of 19 Jul 2003  - New version only deals with settings that can be changed
+                       via program which now includes registration of add-in
+                       Delphi expert DLL. All informational functions now moved
+                       to new UCHIInfo unit.
+                     - Added reference to UCHIInfo and Errors units.
+                     - Removed Errors unit.
+                     - Moved CHIGUILibFilePath, CHIHelpFilePath and
+                       CHInstLibFilePath informational functions to UCHIInfo
+                       unit.
+                     - Added code to register / unregister CHI add-in expert DLL
+                       with Delphi. Also added function to query current
+                       registration.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+PJCHI\Help\CHI.cnt
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version - contents file added for release 2.
+v1.1 of 19 Jul 2003  - Deleted "Help to Test" entry - was only required for beta
+                       version.
+                     - Added topic for registering as add-in expert.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+PJCHI\Help\CHI.hap
+--------------------------------------------------------------------------------
+        06 Apr 2001  - Original help topic file.
+        09 Jun 2001  - Added new topic about how CHI works.
+        06 Jan 2002  - Updated re changes in first v2 beta release.
+        24 May 2003  - Changed references to PJSoft to DelphiDabbler (and
+                       updated web links and email addresses).
+                     - Fixed a few errors.
+        20 Jul 2003  - Updated re latest version of CHI and CHInst.
+                     - Updated description of how CHI works - including example
+                       of ussing command line application.
+                     - Added topics for Expert DLL installation and dialog box.
+        13 Nov 2005  - Updated re new facility to merge ALS files into master
+                       file on Delphi 6 and 7.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+PJCHI\Help\CHI.hpj
+--------------------------------------------------------------------------------
+v1.0 of 06 Apr 2001  - Original version.
+v1.1 of 06 Jan 2003  - Updated copyright date to 2001-2002.
+v1.2 of 24 May 2003  - Changed reference to PJSoft to DelphiDabbler.
+                     - Copyright date to include 2003.
+v1.3 of 13 Nov 2005  - Updated copyright date to include 2003.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+PJCHI\Help\Help.map
+--------------------------------------------------------------------------------
+v1.0 of 01 Apr 2001  - Original version.
+v1.1 of 09 Jun 2001  - Added new id for "how it works" topic.
+v2.0 of 06 Jan 2002  - Rewrote for version 2 help file. This version has some
+                       dummy values for topics not implemented in beta release.
+v2.1 of 19 Jul 2003  - Removed IDH_POPUP_EMAILCOMMENTS and IDH_HOWTOTEST topic
+                       ids - removed from help file.
+                     - Set correct help topic numbers for all "what's this"
+                       popups that were previously set to dummy values in beta
+                       versions.
+                     - Removed temporary "no help" popup topic id.
+                     - Added new IDH_POPUP_TABS id for new popup topic for
+                       tabset in GUI application.
+                     - Added new IDH_DLG_OPTIONS id for new popup
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Shared\Graphics\CHIIcon.rc
+--------------------------------------------------------------------------------
+v1.0 of 05 Apr 2001  - Original version named ..\Graphics\PJSoftIcon.rc that
+                       included PJSoft icon.
+        06 Jan 2002  - Renamed from ..\Graphics\PJSoftIcon.rc to
+                       ..\Shared\Graphics\PJSoftIcon.rc without change.
+v2.0 of 12 May 2003  - Replaced PJSoft icon with new custom program icon.
+                     - Renamed file from PJSoftIcon.rc to CHIIcon.rc
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Shared\Intf\IntfCHIInst.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version for CHI2 beta 1.
+v1.1 of 11 May 2003  - Added UserCanInstallHelp method to ICHIInfo interface and
+                      gave interface new GUID.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Shared\Support\UCHIFileNames.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version.
+v1.1 of 19 Jul 2003  - Added constant for name of new expert DLL - CHIExp.dll.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Shared\Support\UCHIInfo.pas
+--------------------------------------------------------------------------------
+v1.0 of 19 Jul 2003  - Original version - some code moved from USettings.pas
+                       along with additional code re new add-in Delphi expert
+                       DLL.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Shared\Support\UDelphiInfo.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version (for CHI2 beta 1).
+v1.1 of 11 May 2003  - Replaced TRegistry.OpenKey with OpenKeyReadOnly in
+                       DelphiRootDir and InstalledDelphiVersions functions.
+                     - Added routines to return name and path to a Delphi help
+                       file (this was hard wired in previous versions since name
+                       was always "Delphi9.*" up to Delphi 6, but Delphi 7 files
+                       are in format "D7.*").
+v1.2 of 19 Jul 2003  - Added new routine to return name of registry key where
+                       Delphi stores information about expert DLLs.
+v1.3 of 22 Aug 2003  - Changed InstalledDelphiVersions method to return [] if no
+                       Delphi keys present in registry rather than raising an
+                       exception.
+v1.4 of 13 Nov 2005  - Added new DelphiAlsFileName and DelphiAlsFilePath
+                       functions to get path to Delphi's ALS file.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Shared\Support\UDelphiVerInfo.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version for CHI2 beta 1.
+v1.1 of 11 May 2003  - Changed last supported Delphi version from 6 to 7.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Shared\Support\UErrors.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Shared\Support\UFileUtils.pas
+--------------------------------------------------------------------------------
+v1.0 of 06 Jan 2002  - Original version.
+        28 Feb 2010  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+
+================================================================================
+RELEASES
+================================================================================
+
+This section lists all versions of each CHI sub-project from the first to release
+2.2.1. For each release the versions of files that make up each release are
+noted where the information is known.
+
+--------------------------------------------------------------------------------
+Release 1.0 of 06 Apr 2001
+--------------------------------------------------------------------------------
+CHI.exe v1.0 of 06 Apr 2001
+  Added:   CHI.dpr v1.0
+  Added:   CHIVerInfo.rc v1.0
+  Added:   ..\Graphics\PJSoftIcon.rc v1.0
+
+PJCHI.dll v1.0 of 06 Apr 2001
+  Added:   PJCHI.dpr v1.0
+  Added:   FmBase.pas v1.0
+  Added:   FmApp.pas v1.0
+  Added:   FmExpert.pas v1.0
+  Added:   UCHInstaller.pas v1.0
+  Added:   UHelpInfo.pas v1.0
+  Added:   Help\CHI.hap of 06 Apr 2001
+  Added:   Help\CHI.hpj v1.0
+  Added:   Help\Help.map v1.0
+  Added:   PJCHIVerInfo.rc v1.0
+  Added:   ..\Graphics\PJSoftIcon.rc v1.0
+
+PJCHIExpert.pas v1.0 of 06 Apr 2001
+  Added:   PJCHIExpert.pas v1.0
+
+--------------------------------------------------------------------------------
+Release 1.1 of 09 Jun 2001
+--------------------------------------------------------------------------------
+CHI.exe v1.0 of 06 Apr 2001
+  No changes
+
+PJCHI.dll v1.1 of 09 Jun 2001
+  Updated: FmBase.pas v1.1
+  Updated: FmApp.pas v1.1
+  Updated: FmExpert.pas v1.1
+  Updated: PJCHIVerInfo.rc v1.1
+  Updated: Help\CHI.hap of 09 Jun 2001
+  Updated: Help\Help.map v1.1
+
+PJCHIExpert.pas v1.0 of 06 Apr 2001
+  No changes
+
+--------------------------------------------------------------------------------
+Release 1.1.1 of 23 Jun 2001
+--------------------------------------------------------------------------------
+CHI.exe v1.0 of 06 Apr 2001
+  No changes
+
+PJCHI.dll v1.1.1 of 23 Jun 2001
+  Updated: FmApp.pas v1.2
+  Updated: PJCHIVerInfo.rc v1.2
+
+PJCHIExpert.pas v1.1 of 23 Jun 2001
+  Updated: PJCHIExpert.pas v1.1
+
+--------------------------------------------------------------------------------
+Release 2.0 (Beta 1) of 06 Jan 2002
+--------------------------------------------------------------------------------
+CHI.exe v1.1 (Beta 1) of 06 Jan 2002
+  Updated: CHI.dpr v1.1
+  Updated: CHIVerInfo.rc v1.1
+  Renamed: ..\Graphics\PJSoftIcon.rc as ..\Shared\Graphics\PJSoftIcon.rc
+  Added:   ..\Shared\Support\UCHIFileNames.pas v1.0
+
+CHInst.exe v0.9 (Beta 1) of 06 Jan 2002
+  Added:   CHInst.dpr v1.0
+  Added:   UController.pas v1.0
+  Added:   UParamParser.pas v1.0
+  Added:   UReporter.pas v1.0
+  Added:   UCHInstError.pas v1.0
+  Added:   ..\Shared\Support\UDelphiInfo.pas v1.0
+  Added:   ..\Shared\Support\UDelphiVerInfo.pas v1.0
+  Added:   ..\Shared\Support\UCHIFileNames.pas v1.0
+  Added:   ..\Shared\Intf\IntfCHInst.pas v1.0
+  Added:   CHInstVerInfo.rc v1.0
+
+CHInstLib.dll v0.9 (Beta 1) of 06 Jan 2002
+  Added:   CHInstLib.dpr v1.0
+  Added:   UCHInstaller.pas v2.0
+  Added:   UOpenHelpCntFile.pas v1.0
+  Added:   ..\Shared\Support\UDelphiInfo.pas v1.0
+  Added:   ..\Shared\Support\UDelphiVerInfo.pas v1.0
+  Added:   ..\Shared\Support\UFileUtils.pas v1.0
+  Added:   ..\Shared\Support\UErrors.pas v1.0
+  Added:   ..\Shared\Intf\IntfCHInst.pas v1.0
+  Added:   CHInstLibVerInfo.rc v1.0
+
+PJCHI.dll v1.99 (Beta 1) of 06 Jan 2002
+  Removed: UCHInstaller.pas (moved to CHIInstLib.dll project)
+  Updated: PJCHI.dpr v2.0
+  Updated: FmApp.pas v2.0
+  Updated: FmBase.pas v2.0
+  Updated: FmExpert.pas v2.0
+  Added:   FmAutoText.pas v1.0
+  Added:   FmAutoLogo.pas v1.0
+  Added:   FmAppLogo.pas v1.0
+  Added:   FmSplash.pas v1.0
+  Added:   FmRegister.pas v1.0
+  Added:   FmAbout.pas v1.0
+  Added:   USettings.pas v1.0
+  Added:   UGenInfo.pas v1.0
+  Added:   ..\Shared\Intf\IntfCHInst.pas v1.0
+  Added:   ..\Shared\Support\UCHIFileNames.pas v1.0
+  Added:   ..\Shared\Support\UDelphiInfo.pas v1.0
+  Added:   ..\Shared\Support\UDelphiVerInfo.pas v1.0
+  Added:   ..\Shared\Support\UErrors.pas v1.0
+  Added:   ..\Shared\Support\UFileUtils.pas v1.0
+  Updated: PJCHIVerInfo.rc v1.3
+  Renamed: ..\Graphics\PJSoftIcon.rc as ..\Shared\Graphics\PJSoftIcon.rc
+  Updated: Help\CHI.hap of 06 Jan 2002
+  Updated: Help\Help.map v2.0
+  Updated: Help\CHI.hpj v1.1
+  New:     Help\CHI.cnt v1.0
+
+PJCHIExpert.pas v1.2 of 06 Jan 2002
+  Updated: PJCHIExpert.pas v1.2
+
+--------------------------------------------------------------------------------
+Release 2.0 (Beta 1 Patch 1) of 13 Jan 2002
+--------------------------------------------------------------------------------
+CHI.exe v1.1 (Beta 1 Patch 1) of 13 Jan 2002
+  Updated: CHIVerInfo.rc v1.2
+
+CHInst.exe v0.9 (Beta 1 Patch 1) of 13 Jan 2002
+  Updated: CHInstVerInfo.rc v1.1
+
+CHInstLib.dll v0.9 (Beta 1 Patch 1) of 13 Jan 2002
+  Updated: CHInstLibVerInfo.rc v1.1
+
+PJCHI.dll v1.99 Beta 1 of Patch 1 of 13 Jan 2002
+  Updated: PJCHIVerInfo.rc v1.4
+
+PJCHIExpert.pas v1.3 of 13 Jan 2002
+  Updated: PJCHIExpert.pas v1.3
+
+--------------------------------------------------------------------------------
+Release 2.0 (Beta 2) of 24 May 2003
+--------------------------------------------------------------------------------
+CHI.exe v1.1 (Beta 2) of 24 May 2003
+  Added:   CHIVerInfo.vi of 23 May 2003 (replaces CHIVerInfo.rc)
+  Removed: CHIVerInfo.rc v1.1
+  Renamed: ..\Shared\Graphics\PJSoftIcon.rc as ..\Shared\Graphics\CHIIcon.rc
+  Updated: ..\Shared\Graphics\CHIIcon.rc v2.0
+
+CHInst.exe v0.9 (Beta 2) of 24 May 2003
+  Updated: UController.pas v1.1
+  Updated: UReporter.pas v1.1
+  Updated: UCHInstError.pas v1.1
+  Updated: ..\Shared\Support\UDelphiInfo.pas v1.1
+  Updated: ..\Shared\Support\UDelphiVerInfo.pas v1.1
+  Updated: ..\Shared\Intf\IntfCHInst.pas v1.1
+  Removed: CHInstVerInfo.rc
+  Added:   CHInstVerInfo.vi of 23 May 2003 (replaces CHInstVerInfo.rc)
+
+CHInstLib.dll v0.9 (Beta 2) of 24 May 2003
+  Updated: UCHInstaller.pas v2.1 (moved from PJCHI.dll project)
+  Updated: UOpenHelpCntFile.pas v1.1
+  Updated: ..\Shared\Support\UDelphiInfo.pas v1.1
+  Updated: ..\Shared\Support\UDelphiVerInfo.pas v1.1
+  Updated: ..\Shared\Intf\IntfCHInst.pas v1.1
+  Removed: CHInstLibVerInfo.rc
+  Added:   CHInstLibVerInfo.vi of 13 May 2003 (replaces CHInstLibVerInfo.rc)
+
+PJCHI.dll v1.99 (Beta 2) of 24 May 2003
+  Updated: PJCHI.dpr v2.1
+  Updated: FmBase.pas v2.1
+  Updated: FmApp.pas v2.1
+  Updated: FmExpert.pas v2.1
+  Updated: FmAutoLogo.pas v1.1
+  Updated: FmAppLogo.pas v1.1
+  Updated: FmSplash.pas v1.1
+  Updated: FmRegister.pas v1.1
+  Updated: FmAbout.pas v1.1
+  Updated: USettings.pas v1.1
+  Updated: UGenInfo.pas v1.1
+  Updated: ..\Shared\Intf\IntfCHInst.pas v1.1
+  Updated: ..\Shared\Support\UDelphiInfo.pas v1.1
+  Updated: ..\Shared\Support\UDelphiVerInfo.pas v1.1
+  Removed: PJCHIVerInfo.rc
+  Added:   PJCHIVerInfo.vi of 23 May 2003 (replaces PJCHIVerInfo.rc)
+  Renamed: ..\Shared\Graphics\PJSoftIcon.rc as ..\Shared\Graphics\CHIIcon.rc
+  Updated: ..\Shared\Graphics\CHIIcon.rc v2.0
+  Updated: Help\CHI.hap of 24 May 2003
+  Updated: Help\CHI.hpj v1.2
+
+PJCHIExpert.pas v1.4 of 24 May 2003
+  Updated: PJCHIExpert.pas v1.4
+
+--------------------------------------------------------------------------------
+Release 2.0 of 20 Jul 2003
+--------------------------------------------------------------------------------
+CHI.exe v2.0 of 20 Jul 2003
+  Updated: CHI.dpr v2.0
+  Updated: ..\Shared\Support\UCHIFileNames.pas v1.1
+  Updated: CHIVerInfo.vi of 19 Jul 2003
+
+CHIExp.dll v2.0 of 19 Jul 2003
+  Added:   CHIExp.dpr v1.0
+  Renamed: PJCHIExpert.pas as UCHIExpert.pas
+  Updated: UCHIExpert.pas v2.0
+  Added:   ..\Shared\Support\UCHIFileNames.pas v1.1
+  Added:   ..\Shared\Support\UCHIInfo.pas v1.0
+  Added:   ..\Shared\Support\UErrors.pas v1.0
+  Added:   ..\Shared\Support\UFileUtils.pas v1.0
+  Added:   CHIExpVerInfo.vi of 19 Jul 2003
+
+CHInst.exe v1.0 of 20 Jul 2003
+  Updated: UCHInstError.pas v1.2
+  Updated: UController.pas v1.2
+  Updated: UReporter.pas v1.2
+  Updated: UParamParser.pas v1.1
+  Updated: ..\Shared\Support\UCHIFileNames.pas v.1
+  Updated: ..\Shared\Support\UDelphiInfo.pas v1.2
+  Updated: CHInstVerInfo.vi of 18 Jul 2003
+
+CHInstLib.dll v1.0 of 19 Jul 2003
+  Updated: UCHInstaller.pas v2.2
+  Updated: ..\Shared\Support\UDelphiInfo.pas v1.2
+  Updated: CHInstLibVerInfo.vi of 18 Jul 2003
+
+PJCHI.dll v2.0 of 20 Jul 2003
+  Updated: PHCHI.dpr v2.2
+  Added:   FmOptions.pas v1.0
+  Updated: FmBase.pas v2.2
+  Updated: FmApp.pas v2.2
+  Updated: FmSplash.pas v1.2
+  Updated: FmRegister.pas v1.2
+  Updated: FmAbout.pas v1.2
+  Updated: USettings.pas v2.0
+  Updated: UGenInfo.pas v1.2
+  Added:   ..\Shared\Support\UCHIInfo.pas v1.0
+  Updated: ..\Shared\Support\UCHIFileNames.pas v1.1
+  Updated: ..\Shared\Support\UDelphiInfo.pas v1.2
+  Updated: PJCHIVerInfo.vi of 18 Jul 2003
+  Updated: Help\Help.map v2.1
+  Updated: Help\CHI.cnt v1.1
+  Updated: Help\CHI.hap of 20 Jul 2003
+
+--------------------------------------------------------------------------------
+Release 2.0.1 of 22 Aug 2003
+--------------------------------------------------------------------------------
+CHI.exe v2.0 (build 6) of 22 Aug 2003
+  Updated: CHIVerInfo.vi of 22 Aug 2003
+
+CHIExp.dll v2.0 (build 7) of 22 Aug 2003
+  Updated: CHIExpVerInfo.vi of 22 Aug 2003
+
+CHInst.exe v1.0.1 (build 5) of 22 Aug 2003
+  Updated: CHInst.dpr v1.1
+  Removed: ..\Shared\Support\UDelphiInfo.pas v1.2
+  Updated: CHInstVerInfo.vi of 22 Aug 2003
+
+CHInstLib.dll v1.0.1 (build 5) of 22 Aug 2003
+  Updated: ..\Shared\Support\UDelphiInfo.pas v1.3
+  Updated: CHInstLibVerInfo.vi of 22 Aug 2003
+
+PJCHI.dll v2.0.1 (build 8) of 22 Aug 2003
+  Updated: FmBase.pas v2.3
+  Updated: ..\Shared\Support\UDelphiInfo.pas v1.3
+  Updated: PJCHIVerInfo.vi of 18 Jul 2003
+
+--------------------------------------------------------------------------------
+Release 2.1 of 17 Apr 2004
+--------------------------------------------------------------------------------
+CHI.exe v2.0 (build 7) of 17 Apr 2004
+  Updated: CHIVerInfo.vi of 17 Apr 2004
+
+CHIExp.dll v2.0 (build 8) of 17 Apr 2004
+  Updated: CHIExpVerInfo.vi of 17 Arpr 2004
+
+CHInst.exe v1.0.1 (build 6) of 17 Apr 2004
+  Updated: CHInstVerInfo.vi of 17 Apr 2004
+
+CHInstLib.dll v1.0.1 (build 6) of 17 Apr 2004
+  Updated: CHInstLibVerInfo.vi of 17 Apr 2004
+
+PJCHI.dll v2.1 (build 9) of 17 Apr 2004
+  Updated: FmBase.pas v2.4
+  Updated: PJCHIVerInfo.rc of 17 Apr 2004
+
+--------------------------------------------------------------------------------
+Release 2.2 of 13 Nov 2005
+--------------------------------------------------------------------------------
+CHI.exe v2.0 (build 8) of 13 Nov 2005
+  Updated: CHIVerInfo.vi of 13 Nov 2005
+
+CHIExp.dll v2.0 (build 9) of 13 Nov 2005
+  Updated: CHIExpVerInfo.vi of 13 Nov 2005
+
+CHInst.exe v1.0.1 (build 7) of 13 Nov 2005
+  Updated: CHInstVerInfo.vi of 13 Nov 2005
+
+CHInstLib.dll v1.1 (build 7) of 13 Nov 2005
+  Updated: UCHInstaller.pas v2.3
+  Updated: ..\Shared\Support\UDelphiInfo.pas v1.4
+  Updated: CHInstLibVerInfo.vi of 13 Nov 2005
+
+PJCHI.dll v2.1 (build 10) of 13 Nov 2005
+  Updated: PJCHIVerInfo.vi of 13 Nov 2005
+  Updated: ..\Shared\Support\UDelphiInfo.pas v1.4
+  Updated: Help\CHI.hpj v1.3
+  Updated: Help\CHI.hap of 13 Nov 2005
+
+--------------------------------------------------------------------------------
+Release 2.2.1 of 12 Dec 2005
+--------------------------------------------------------------------------------
+CHI.exe v2.0 (build 9) of 12 Dec 2005
+  Updated: CHIVerInfo.vi of 12 Dec 2005
+
+CHIExp.dll v2.0 (build 10) of 12 Dec 2005
+  Updated: CHIExpVerInfo.vi of 12 Dec 2005
+
+CHInst.exe v1.0.1 (build 8) of 12 Dec 2005
+  Updated: CHInstVerInfo.vi of 12 Dec 2005
+
+CHInstLib.dll v1.1.1 (build 8) of 12 Dec 2005
+  Updated: UCHInstaller.pas v2.4
+  Updated: CHInstLibVerInfo.vi of 12 Dec 2005
+
+PJCHI.dll v2.1 (build 11) of 12 Dec 2005
+  Updated: PJCHIVerInfo.vi of 12 Dec 2005
+
+--------------------------------------------------------------------------------
+$Rev: 6 $
+$Date: 2010-02-28 12:11:03 +0000 (Sun, 28 Feb 2010) $
+--------------------------------------------------------------------------------

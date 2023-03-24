@@ -1,0 +1,125 @@
+; ------------------------------------------------------------------------------
+; Change Log for Component Help Installer
+; $Rev: 73 $
+; $Date: 2010-05-10 17:01:47 +0100 (Mon, 10 May 2010) $
+; ------------------------------------------------------------------------------
+
+Release 3.0 of 10 May 2010
+CHI.exe v3.0 (build 10) of 10 May 2010
+CHInst.exe v1.1 (build 9) of 10 May 2010
+CHInstLib.dll v1.2 (build 9) of 10 May 2010
++ Removed Delphi IDE add-in expert from product: it now contains stand alone GUI and command line apps only.
++ Subsumed former PJCHI.dll functionality into CHI.exe.
++ Removed GUI program's options dialog. It was used to configure IDE add-in.
++ Completely revised GUI program's about box.
++ Added manifest resources to set required admin execution level on Vista and later.
++ Removed online registration and email author options from GUI program.
++ Removed splash screen from GUI program and associated nags.
++ Updated error messages when program runs without correct privileges.
++ Programs no longer access or update the registry.
++ New GUI installer replaces old command line installer. Support for Vista and later added and support for Win 9x removed.
++ All .exe and .dll files must now be in same directory.
++ Changed to use updated DelphiDabbler System Info library code.
++ Removed tool used to convert CHI v1 files to v2 format.
++ Restructured source code and removed unused files.
++ Updated help file with changes.
++ New EULA.
++ Compiled with Delphi 7 instead of Delphi 4.
+
+Release 2.2.1 of 12 December 2005
+CHI.exe v2.0 (build 9) of 12 Dec 2005
+CHIExp.dll v2.0 (build 10) of 12 Dec 2005
+CHInst.exe v1.0.1 (build 8) of 12 Dec 2005
+CHInstLib.dll v1.1.1 (build 8) of 12 Dec 2005
+PJCHI.dll v2.1 (build 11) of 12 Dec 2005
++ Fixed bug where program crashes under Delphi 6 and 7 when no .als file is present.
+
+Release 2.2 of 13 November 2005
+CHI.exe v2.0 (build 8) of 13 Nov 2005
+CHIExp.dll v2.0 (build 9) of 13 Nov 2005
+CHInst.exe v1.0.1 (build 7) of 13 Nov 2005
+CHInstLib.dll v1.1 (build 7) of 13 Nov 2005
+PJCHI.dll v2.1 (build 10) of 13 Nov 2005
++ Added support for installing .als files in Delphi 6 and 7.
++ Updated help file accordingly.
++ Changed to Mozilla Public License.
+
+Release 2.1 of 17 April 2004
+CHI.exe v2.0 (build 7) of 17 Apr 2004
+CHIExp.dll v2.0 (build 8) of 17 Apr 2004
+CHInst.exe v1.0.1 (build 6) of 17 Apr 2004
+CHInstLib.dll v1.0.1 (build 6) of 17 Apr 2004
+PJCHI.dll v2.1 (build 9) of 17 Apr 2004
++ The installed path of the selected help file is now displayed on the "Remove" page of the GUI program and expert.
++ Fixed bug that prevented help file from being unregistered with Delphi if it is not registered with Windows.
+
+Release 2.0.1 of 22 August 2003
+CHI.exe v2.0 (build 6) of 22 Aug 2003
+CHIExp.dll v2.0 (build 7) of 22 Aug 2003
+CHInst.exe v1.0.1 (build 5) of 22 Aug 2003
+CHInstLib.dll v1.0.1 (build 5) of 22 Aug 2003
+PJCHI.dll v2.0.1 (build 8) of 22 Aug 2003
++ Fixed bug in GUI application that was preventing program from refusing to run when Delphi is not installed on the computer.
++ Also fixed installer bug when run on systems with no Delphi installation.
+
+Release 2.0 of 20 July 2003
+CHI.exe v2.0 of 20 Jul 2003
+CHIExp.dll v2.0 of 19 Jul 2003
+CHInst.exe v1.0 of 20 Jul 2003
+CHInstLib.dll v1.0 of 19 Jul 2003
+PJCHI.dll v2.0 of 20 Jul 2003
++ Delphi expert is now contained in a DLL which can be installed into Delphi IDE automatically. This replaces the source code unit (PJCHIExpert.pas) that previously needed to be compiled into a design time package within Delphi.
++ Added dialog box to configure which versions of Delphi the expert is installed into. This dialog can be accessed from the stand-alone application GUI. It can also be displayed from the command line and is used by the install program.
++ Removed link to email comments from hyperlink on main GUI application and add-in expert main window - this is now a menu item accessed from the Help button.
++ Modified command line application so that WinHelp topics can be accessed from it.
++ Some minor bug fixes.
++ Expanded help file re new features.
+
+Release 2.0 (Beta 2) of 24 May 2003
+CHI.exe v1.1 (Beta 2) of 24 May 2003
+CHInst.exe v0.9 (Beta 2) of 24 May 2003
+CHInstLib.dll v0.9 (Beta 2) of 24 May 2003
+PJCHI.dll v1.99 (Beta 2) of 24 May 2003
+PJCHIExpert.pas v1.4 of 24 May 2003
++ Revised method used to record help file information in Delphi OpenHelp files. The DLL now updates Delphi's index and link files rather than using its own config file. This new method works with later versions of Delphi. A custom config file is now used only to maintain a list of files installed by CHI.
++ Various WinHelp generated housekeeping files are now deleted whenever OpenHelp is updated. This ensures changes take effect immediately.
++ Changed PJSoft branding to DelphiDabbler.
++ Improved program registration function.
+
+Release 2.0 (Beta 1 Patch 1) of 13 January 2002
+CHI.exe v1.1 (Beta 1 Patch 1) of 13 Jan 2002
+CHInst.exe v0.9 (Beta 1 Patch 1) of 13 Jan 2002
+CHInstLib.dll v0.9 (Beta 1 Patch 1) of 13 Jan 2002
+PJCHI.dll v1.99 Beta 1 of Patch 1 of 13 Jan 2002
+PJCHIExpert.pas v1.3 of 13 Jan 2002
++ Fixes "DLL not found" bug in Delphi expert.
+
+Release 2.0 (Beta 1) of 06 January 2002
+CHI.exe v1.1 (Beta 1) of 06 Jan 2002
+CHInst.exe v0.9 (Beta 1) of 06 Jan 2002
+CHInstLib.dll v0.9 (Beta 1) of 06 Jan 2002
+PJCHI.dll v1.99 (Beta 1) of 06 Jan 2002
+PJCHIExpert.pas v1.2 of 06 Jan 2002
++ First Beta of new release that aims to be compatible with Delphi 3 to 6.
++ Introduces command line version of the application.
++ New installation engine using different technique to release 1.
+
+Release 1.1.1 of 23 June 2001
+CHI.exe v1.0 of 06 Apr 2001
+PJCHI.dll v1.1.1 of 23 Jun 2001
+PJCHIExpert.pas v1.1 of 23 Jun 2001
++ Fixed bug that was preventing expert and application from detecting Delphi on locales not using '.' as decimal point.
+
+Release 1.1 of 09 June 2001
+CHI.exe v1.0 of 06 Apr 2001
+PJCHI.dll v1.1 of 09 Jun 2001
+PJCHIExpert.pas v1.0 of 06 Apr 2001
++ Modified so that expert won't run with any version of Delphi other than Delphi 3 or 4, or as part of application if no versions of Delphi are detected.
++ Added information on how CHI works to help file and made help button display a menu giving choice of help overview or help on how CHI works.
++ Made about box give information about both the DLL and the host application.
+
+Release 1.0 of 06 April 2001
+CHI.exe v1.0 of 06 Apr 2001
+PJCHI.dll v1.0 of 06 Apr 2001
+PJCHIExpert.pas v1.0 of 06 Apr 2001
++ Original version.
